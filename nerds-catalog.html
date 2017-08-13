@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Каталог товаров NЁRDS</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="http://placehold.it/200x50" alt="Нёрдс" width="100" height="100"/>
+				</a>
+				<ul class="site-navigation">
+					<li><a href="studio.html">Студия</a></li>
+					<li><a href="clients.html">Клиенты</a></li>
+					<li><a href="nerds-catalog.html">Магазин</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<ul class="cart">
+					<li>Корзина</li>
+				</ul>
+			</nav>
+			<h1>Магазин готовых шаблонов</h1>
+		</header>
+		<main class="container">
+			<section class="filters">
+				<h2 class="visually-hidden">Фильтр товаров</h2>
+				<form class="filter" method="post" action="https://echo.htmlacademy.ru">
+					<fieldset>
+						<legend>Стоимость:</legend>
+							<input type="range" name="price" min="0" max="15000" multiple="range"><br>
+							<label for="from">ОТ</label>
+								<input type="text" id="from" placeholder="0">
+							<label for="to">ДО</label>
+								<input type="text" id="to" placeholder="15 000">
+					</fieldset>
+					<fieldset>
+						<legend>Сетка:</legend>
+							<ul>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input-radio" type="radio" name="mesh" value="adaptive" checked>
+									Адаптивная</li>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input-radio" type="radio" name="mesh" value="fixed">
+									Фиксированная
+								</li>
+								<li>
+									<input class="visually-hidden filter-input-radio" type="radio" name="mesh" value="rubber">
+									Резиновая
+								</li>
+							</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+							<ul>
+								<li>
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="slider" checked>
+									Слайдер
+								</li>
+								<li>
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="block-advantage">
+									Блок преимуществ
+								</li>
+								<li>
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="news" checked>
+									Новости
+								</li>
+								<li>
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="gallery">
+									Галерея
+								</li>
+								<li>
+									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="cart">
+									Корзина
+								</li>
+							</ul>
+					</fieldset>
+					<button class="buttom" type="submit">Показать</button>
+				</form>
+			</section>
+			<section class="sort">
+					<b>Сортировать:</b>
+					<ul>
+						<li><a href="#">По цене</a></li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По названию</a></li>
+					</ul>
+			</section>
+			<section class="main-catalog">
+				<ul class="catalog">
+					<li>
+						<img src="img/img-sedona.jpg" alt="Шаблон сайта 'Sedona'" width="360" height="576">
+					</li>
+					<li>
+						<img src="img/img-pink.jpg" alt="Шаблон сайта 'Pink'" width="360" height="576">
+					</li>
+					<li>
+						<img src="img/img-barbershop.jpg" alt="Шаблон сайта 'Барбершоп'" width="360" height="576">
+					</li>
+					<li>
+						<img src="img/img-mishka.jpg" alt="Шаблон сайта 'Мишка'" width="360" height="576">
+					</li>
+					<li>
+						<img src="img/img-aplus.jpg" alt="Шаблон сайта 'A+'" width="360" height="576">
+					</li>
+					<li>
+						<img src="img/img-kvast.jpg" alt="Шаблон сайта 'Кваст'" width="360" height="576">
+					</li>
+				</ul>
+				<ul class="pagination-list">
+		          <li class="pagination-item pagination-item-current"><a>1</a></li>
+		          <li class="pagination-item"><a href="#">2</a></li>
+		          <li class="pagination-item"><a href="#">3</a></li>
+		          <li class="pagination-item"><a href="#">4</a></li>
+		          <button class="button" type="submmit">Следующая</button>
+        		</ul>
+			</section>
+			<section class="contacts">
+				<div class="maps">
+					<img src="http://placehold.it/500x150" alt="map">
+					<img src="http://placehold.it/100x50" alt="marker">
+				</div>
+				<div class="contacts">
+					<b>NЁRDS DESIGN STUDIO</b>
+					<br>
+					<span>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+					<br>
+					<span>тел. +7 (812) 275-75-75</span>
+					<br>
+					<button class="write-to-us">Напишите нам</button>
+				</div>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<ul class="social">
+				<li><a href="#"><img src="img/vk.jpg" alt="VK"></a></li>
+				<li><a href="#"><img src="img/fb.jpg" alt="Facebook"></a></li>
+				<li><a href="#"><img src="img/inst.jpg" alt="Instagram"></a></li>
+			</ul>
+			<b>Давайте дружить, это выгодно!</b><br>
+			<span>Скидка 10% для друзей из социальных сетей.</span>
+		</footer>
+
+	</body>
+</html>
