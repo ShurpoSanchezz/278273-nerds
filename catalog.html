@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Каталог товаров NЁRDS</title>
+		<link rel="stylesheet" href="fonts/Roboto-master/">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -37,15 +40,16 @@
 					<fieldset>
 						<legend>Сетка:</legend>
 							<ul>
-								<li class="filter-option">
-									<input class="visually-hidden filter-input-radio" type="radio" name="mesh" value="adaptive" checked>
-									Адаптивная</li>
-								<li class="filter-option">
-									<input class="visually-hidden filter-input-radio" type="radio" name="mesh" value="fixed">
+								<li>
+									<input class="filters filter-input-radio" type="radio" name="mesh" value="adaptive" checked>
+									Адаптивная
+								</li>
+								<li>
+									<input class="filters filter-input-radio" type="radio" name="mesh" value="fixed">
 									Фиксированная
 								</li>
 								<li>
-									<input class="visually-hidden filter-input-radio" type="radio" name="mesh" value="rubber">
+									<input class="filters filter-input-radio" type="radio" name="mesh" value="rubber">
 									Резиновая
 								</li>
 							</ul>
@@ -54,28 +58,28 @@
 						<legend>Особенности:</legend>
 							<ul>
 								<li>
-									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="slider" checked>
+									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="slider" checked>
 									Слайдер
 								</li>
 								<li>
-									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="block-advantage">
+									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="block-advantage">
 									Блок преимуществ
 								</li>
 								<li>
-									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="news" checked>
+									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="news" checked>
 									Новости
 								</li>
 								<li>
-									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="gallery">
+									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="gallery">
 									Галерея
 								</li>
 								<li>
-									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="feature" value="cart">
+									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="cart">
 									Корзина
 								</li>
 							</ul>
 					</fieldset>
-					<button class="buttom" type="submit">Показать</button>
+					<button class="filters buttom" type="submit">Показать</button>
 				</form>
 			</section>
 			<section class="sort">
@@ -87,6 +91,7 @@
 					</ul>
 			</section>
 			<section class="main-catalog">
+			<h2 class="visually-hidden">Каталог товаров</h2>
 				<ul class="catalog">
 					<li class="sedona">
 						<a href="#"><img src="img/img-sedona.jpg" alt="Шаблон сайта 'Sedona'" width="360" height="576"></a>
@@ -147,8 +152,8 @@
 			</section>
 			<section class="contacts">
 				<div class="maps">
-					<img src="http://placehold.it/500x150" alt="map">
-					<img src="http://placehold.it/100x50" alt="marker">
+					<img src="img/map.jpg" alt="map">
+					<img src="img/map-marker.png" alt="marker">
 				</div>
 				<div class="contacts">
 					<b>NЁRDS DESIGN STUDIO</b>
