@@ -34,25 +34,35 @@
 					<fieldset>
 						<legend>Стоимость:</legend>
 							<input type="range" name="price" min="0" max="15000"><br>
-							<label for="from">ОТ</label>
+							<label for="from">
 								<input type="text" id="from" placeholder="0">
-							<label for="to">ДО</label>
+								ОТ
+							</label>
+							<label for="to">
 								<input type="text" id="to" placeholder="15 000">
+								ДО
+							</label>
 					</fieldset>
 					<fieldset>
 						<legend>Сетка:</legend>
 							<ul>
 								<li>
-									<input class="filters filter-input-radio" type="radio" name="mesh" value="adaptive" checked>
-									Адаптивная
+									<label for="radio">
+										<input class="filters filter-input-radio" type="radio" name="mesh" value="adaptive" checked>
+										Адаптивная
+									</label>
 								</li>
 								<li>
-									<input class="filters filter-input-radio" type="radio" name="mesh" value="fixed">
-									Фиксированная
+									<label for="radio">
+										<input class="filters filter-input-radio" type="radio" name="mesh" value="fixed">
+										Фиксированная
+									</label>
 								</li>
 								<li>
-									<input class="filters filter-input-radio" type="radio" name="mesh" value="rubber">
-									Резиновая
+									<label for="radio">
+										<input class="filters filter-input-radio" type="radio" name="mesh" value="rubber">
+										Резиновая
+									</label>
 								</li>
 							</ul>
 					</fieldset>
@@ -60,24 +70,34 @@
 						<legend>Особенности:</legend>
 							<ul>
 								<li>
-									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="slider" checked>
-									Слайдер
+									<label for="checkbox">
+										<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="slider" checked>
+										Слайдер
+									</label>
 								</li>
 								<li>
-									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="block-advantage">
-									Блок преимуществ
+									<label for="checkbox">
+										<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="block-advantage">
+										Блок преимуществ
+									</label>
 								</li>
 								<li>
-									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="news" checked>
-									Новости
+									<label for="checkbox">
+										<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="news" checked>
+										Новости
+									</label>
 								</li>
 								<li>
-									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="gallery">
-									Галерея
+									<label for="checkbox">
+										<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="gallery">
+										Галерея
+									</label>
 								</li>
 								<li>
-									<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="cart">
-									Корзина
+									<label for="checkbox">
+										<input class="filters filter-input-checkbox" type="checkbox" name="feature" value="cart">
+										Корзина
+									</label>
 								</li>
 							</ul>
 					</fieldset>
