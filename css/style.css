@@ -6,16 +6,20 @@ body {
 	line-height: 24px;
 }
 
+.visually-hidden {
+	visibility: hidden;
+}
+
 .title-catalog h1 {
 	font-size: 55px;
-	font-family: Roboto, sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	color: #000000;
 	line-height: 43px;
 }
 
 .modal-contacts h2  {
-	font-family: Roboto, sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 45px;
 	font-weight: 500;
 	color: #000000;
