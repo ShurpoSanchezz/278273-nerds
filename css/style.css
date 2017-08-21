@@ -38,6 +38,10 @@ a {
 	visibility: hidden;
 }
 
+.visually-hidden {
+	visibility: hidden;
+}
+
 .title-catalog h1 {
 	font-size: 55px;
 	font-family: "Roboto", sans-serif;
