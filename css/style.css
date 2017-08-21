@@ -1,9 +1,37 @@
-body {
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
-	font-family: Roboto, sans-serif;
+	line-height: 24px;
 	font-weight: 500;
 	color: #283136;
-	line-height: 24px;
+	background-color: white;
+	background-image: url ("img/white-back.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 30px;
+	color: rgba(0, 0, 0);
+	background-color: gray;
+	text-transform: uppercase;
+}
+
+.site-navigation,
+.cart-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.cart-navigation a {
+	color: rgba(0, 0, 0);
 }
 
 .visually-hidden {
