@@ -3,22 +3,25 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Каталог товаров NЁRDS</title>
-		<link rel="stylesheet" href="fonts/Roboto-master/">
-		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="fonts/">
 		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
 	</head>
 	<body>
 		<header class="main-header">
-			<a class="main-header-logo">
-				<img src="img/nerds-logo.svg" alt="Нёрдс" width="100" height="100"/>
-			</a>
 			<nav class="main-navigation">
+				<a class="main-header-logo" href="index.html">
+					<img src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="68">
+				</a>
 				<ul class="site-navigation">
 					<li><a href="studio.html">Студия</a></li>
 					<li><a href="clients.html">Клиенты</a></li>
 					<li><a href="nerds-catalog.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
-					<li><a href="cart">Корзина</a></li>
+					<li>
+						<img src="img/cart-icon.svg" alt="Корзина">
+						<a href="cart">Корзина</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -33,12 +36,12 @@
 						<legend>Стоимость:</legend>
 							<input type="range" name="price" min="0" max="15000"><br>
 							<label for="from">
-								<input type="text" id="from" placeholder="0">
 								ОТ
+								<input type="text" id="from" placeholder="0">
 							</label>
 							<label for="to">
-								<input type="text" id="to" placeholder="15 000">
 								ДО
+								<input type="text" id="to" placeholder="15 000">
 							</label>
 					</fieldset>
 					<fieldset>
