@@ -3,45 +3,62 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="fonts/Roboto-master/">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="fonts/">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body>
 	<header class="main-header">
-		<a class="main-header-logo">
-			<img src="img/nerds-logo.svg" alt="Нёрдс" width="160" height="68">
-		</a>
 		<nav class="main-navigation">
+			<a class="main-header-logo">
+				<img src="img/nerds-logo.svg" alt="Нёрдс" width="160" height="68">
+			</a>
 			<ul class="site-navigation">
 				<li><a href="studio.html">Студия</a></li>
 				<li><a href="clients.html">Клиенты</a></li>
-				<li><a href="nerds-catalog.html">Магазин</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
-				<li><a href="cart">Корзина</a></li>
+			</ul>
+			<ul class="cart-navigation">
+				<li>
+					<img src="img/cart-icon.svg" alt="Корзина">
+					<a href="cart">Корзина</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
 	<main class="container">
 		<h1 class="visually-hidden">Веб-студия "Нёрдс"</h1>
 		<section class="slides">
-			<div class="slides slide-1">
-				<b>Долго, дорого, скрупулезно.</b>
-				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a class="button" href="more-slide-1.html">Узнать больше</a>
-				<img src="img/slide1.png" alt="Долго, дорого, скрупулезно.">
+			<div class="slide-1">
+				<div class="slide1-left">
+					<b>Долго, дорого, скрупулезно.</b>
+					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<a class="button" href="more-slide-1.html">Узнать больше</a>
+				</div>
+				<div class="slide1-right">
+					<img src="img/slide1.png" alt="Долго, дорого, скрупулезно." width="698" height="413">
+				</div>
 			</div>
-			<div class="slides slide-2">
-				<b>Любим математику как никто другой</b>
-				<p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
-				<a class="button" href="more-slide-2.html">Узнать больше</a>
-				<img src="img/slide2.png" alt="Любим математику как никто другой">
+			<div class="slide-2">
+				<div class="slide2-left">
+					<b>Любим математику как никто другой</b>
+					<p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
+					<a class="button" href="more-slide-2.html">Узнать больше</a>
+				</div>
+				<div class="slide2-right">
+					<img src="img/slide2.png" alt="Любим математику как никто другой">
+				</div>
 			</div>
-			<div class="slides slide-3">
-				<b>Только ночь, только хардкор.</b>
-				<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-				<a class="button" href="more-slide-2.html">Узнать больше</a>
-				<img src="img/slide3.png" alt="Только ночь, только хадкор.">
+			<div class="slide-3">
+				<div class="slide3-left">
+					<b>Только ночь, только хардкор.</b>
+					<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+					<a class="button" href="more-slide-2.html">Узнать больше</a>
+				</div>
+				<div class="slide3-right">
+					<img src="img/slide3.png" alt="Только ночь, только хадкор.">
+				</div>
 			</div>
 			<div class="radio-button">
 				<label>
@@ -59,19 +76,19 @@
 		<h2 class="visually-hidden">Услуги веб-студии "Нёрдс"</h2>
 			<ul>
 				<li>
-					<img src="img/illustration-1.jpg" alt="Веб-сайты">
+					<img src="img/illustration-1.jpg" alt="Веб-сайты" width="300px" height="146px">
 					<h3>Веб-сайты</h3>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 					<button class="button" type="submit">Заказать</button>
 				</li>
 				<li>
-					<img src="img/illustration-2.jpg" alt="Приложения">
+					<img src="img/illustration-2.jpg" alt="Приложения" width="300px" height="146px">
 					<h3>Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 					<button class="button" type="submit">Заказать</button>
 				</li>
 				<li>
-					<img src="img/illustration-3.jpg" alt="Презентации">
+					<img src="img/illustration-3.jpg" alt="Презентации" width="300px" height="146px">
 					<h3>Презентации</h3>
 					<p>Вы даже не подозреваете насколько вы изумительны!</p>
 					<button class="button" type="submit">Заказать</button>
@@ -91,7 +108,7 @@
 				</ul>
 			</div>
 			<div class="about-right">
-				<img class="about-logo" src="img/nerds-illustration.jpg" alt="Логотип Веб-студии">
+				<img class="about-logo" src="img/nerds-illustration.jpg" alt="Логотип Веб-студии" width="360" height="208">
 				<p>С 2004 года любим точность во всем:</p>
 				<ul class="advantage-number">
 					<li>146<sup>%</sup></li>
@@ -108,10 +125,10 @@
 		<section class="partners">
 		<h2 class="visually-hidden">Наши партнёры</h2>
 			<ul>
-				<li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="HTMLACADEMY"></a></li>
-				<li><a href="#"><img src="img/logo-2.png" alt="Borodinski"></a></li>
-				<li><a href="#"><img src="img/logo-3.png" alt="PINK"></a></li>
-				<li><a href="#"><img src="img/logo-4.png" alt="Mishka"></a></li>
+				<li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="HTMLACADEMY" width="199" height="68"></a></li>
+				<li><a href="#"><img src="img/logo-2.png" alt="Borodinski" width="209" height="90"></a></li>
+				<li><a href="#"><img src="img/logo-3.png" alt="PINK" width="185" height="52"></a></li>
+				<li><a href="#"><img src="img/logo-4.png" alt="Mishka" width="173" height="84"></a></li>
 			</ul>
 		</section>
 		<section class="contacts">
