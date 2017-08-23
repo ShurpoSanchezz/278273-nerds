@@ -34,7 +34,17 @@
 				<form class="filter" method="post" action="https://echo.htmlacademy.ru">
 					<fieldset>
 						<legend>Стоимость:</legend>
-							<input type="range" name="price" min="0" max="15000"><br>
+							<div class="filter">
+								<div class="filter-range-wrapper">
+									<div class="filter-range">
+										<div class="filter-range-scale">
+											<div class="filter-range-bar"></div>
+										</div>
+										<div class="filter-range-handle min"></div>
+										<div class="filter-range-handle max"></div>
+									</div>
+								</div>
+							</div>
 							<label for="from">
 								ОТ
 								<input type="text" id="from" placeholder="0">
@@ -44,7 +54,7 @@
 								<input type="text" id="to" placeholder="15 000">
 							</label>
 					</fieldset>
-					<fieldset>
+					<fieldset class="mesh">
 						<legend>Сетка:</legend>
 							<ul>
 								<li>
@@ -61,13 +71,13 @@
 								</li>
 								<li>
 									<label>
-										<input type="radio" name="mesh" value="rubber">
+										<input type="radio" name="mesh" value="rubber" disabled>
 										Резиновая
 									</label>
 								</li>
 							</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="feature">
 						<legend>Особенности:</legend>
 							<ul>
 								<li>
@@ -107,16 +117,30 @@
 			</section>
 			<section class="sort">
 					<b>Сортировать:</b>
-					<ul>
+					<ul class="sort-word">
 						<li><a href="#">По цене</a></li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По названию</a></li>
+					</ul>
+					<ul class="sort-dir">
+						<li>
+							<a>
+								<img src="img/icon-down-dir.svg" alt="Сортировать по убыванию">
+							</a>
+						</li>
+						<li>
+							<a></a>
+							<img src="img/icon-up-dir.svg" alt="Сортировать по возрастанию">
+						</li>
 					</ul>
 			</section>
 			<section class="main-catalog">
 			<h2 class="visually-hidden">Каталог товаров</h2>
 				<ul class="catalog">
 					<li class="sedona">
+					<div class="head">
+						<img src="img/browser.svg" alt="">
+					</div>
 						<a href="#"><img src="img/img-sedona.jpg" alt="Шаблон сайта 'Sedona'" width="360" height="576"></a>
 						<div class="sedona-hover">
 							<a href="#">Sedona</a><br>
@@ -125,6 +149,9 @@
 						</div>
 					</li>
 					<li class="pink">
+					<div class="head">
+						<img src="img/browser.svg" alt="">
+					</div>
 						<a href="#"><img src="img/img-pink.jpg" alt="Шаблон сайта 'Pink'" width="360" height="576"></a>
 						<div class="pink-hover">
 							<a href="#">Pink App</a><br>
@@ -133,6 +160,9 @@
 						</div>
 					</li>
 					<li class="barbershop">
+					<div class="head">
+						<img src="img/browser.svg" alt="">
+					</div>
 						<a href="#"><img src="img/img-barbershop.jpg" alt="Шаблон сайта 'Барбершоп'" width="360" height="576"></a>
 						<div class="barbershop-hover">
 							<a href="#">Barbershop</a><br>
@@ -141,6 +171,9 @@
 						</div>
 					</li>
 					<li class="mishka">
+					<div class="head">
+						<img src="img/browser.svg" alt="">
+					</div>
 						<a href="#"><img src="img/img-mishka.jpg" alt="Шаблон сайта 'Мишка'" width="360" height="576"></a>
 						<div class="mishka-hover">
 							<a href="#">Mishka</a><br>
@@ -149,6 +182,9 @@
 						</div>
 					</li>
 					<li class="aplus">
+					<div class="head">
+						<img src="img/browser.svg" alt="">
+					</div>
 						<a href="#"><img src="img/img-aplus.jpg" alt="Шаблон сайта 'A Plus'" width="360" height="576"></a>
 						<div class="aplus-hover">
 							<a href="#">A Plus</a><br>
@@ -157,6 +193,9 @@
 						</div>
 					</li>
 					<li class="Kvast">
+					<div class="head">
+						<img src="img/browser.svg" alt="">
+					</div>
 						<a href="#"><img src="img/img-kvast.jpg" alt="Шаблон сайта 'Кваст'" width="360" height="576"></a>
 						<div class="kvast-hover">
 							<a href="#">Кваст</a><br>
@@ -170,46 +209,49 @@
 		          <li class="pagination-item"><a href="#">2</a></li>
 		          <li class="pagination-item"><a href="#">3</a></li>
 		          <li class="pagination-item"><a href="#">4</a></li>
-        		</ul>
+		        </ul>
         		<button class="button" type="submit">Следующая</button>
 			</section>
 			<section class="contacts">
+			<h2 class="visually-hidden">Наши контакты</h2>
 				<div class="maps">
-					<img src="img/map.jpg" alt="map">
-					<img src="img/map-marker.png" alt="marker">
+					<img class="map" src="img/map.jpg" alt="map">
+					<img class="marker" src="img/map-marker.png" alt="marker">
 				</div>
-				<div class="contacts">
+				<div class="write-to-us">
 					<b>NЁRDS DESIGN STUDIO</b>
 					<br>
 					<span>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 					<br>
 					<span>тел. +7 (812) 275-75-75</span>
 					<br>
-					<button class="write-to-us">Напишите нам</button>
+					<button>Напишите нам</button>
 				</div>
-			</section>
-		</main>
-		<footer class="main-footer">
-			<ul class="social">
-				<li><a href="#"><img src="img/vk.jpg" alt="VK"></a></li>
-				<li><a href="#"><img src="img/fb.jpg" alt="Facebook"></a></li>
-				<li><a href="#"><img src="img/inst.jpg" alt="Instagram"></a></li>
-			</ul>
-			<b>Давайте дружить, это выгодно!</b><br>
-			<span>Скидка 10% для друзей из социальных сетей.</span>
-		</footer>
-		<section class="modal modal-contacts">
-			<h2>Напишите нам</h2>
-			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-				<label for="name">Ваше имя:</label>
-					<input id="name" type="text" placeholder="Представьте, пожалуйста">
-				<label for="email">Ваш e-mail:</label>
-					<input id="email" type="email" placeholder="Для отправки ответа">
-				<label for="textmessage">Текст письма:</label>
-					<input type="text" id="textmessage" placeholder="В свободной форме">
-				<button class="button" type="submit">Отправить</button>
-			</form>
-			<span class="modal-close">x</span>
 		</section>
+	</main>
+	<footer class="main-footer">
+		<ul class="social">
+			<li><a href="htts://vk.com"><img src="img/vk-icon.svg" alt="VK"></a></li>
+			<li><a href="https://facebook.com"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
+			<li><a href="https://instagram.com"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
+		</ul>
+		<b>Давайте дружить, это выгодно!</b><br>
+		<span>Скидка 10% для друзей из социальных сетей.</span>
+	</footer>
+		<section class="modal-contacts">
+			<h2>Напишите нам</h2>
+				<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+					<label for="name">Ваше имя:</label>
+						<input id="name" type="text" placeholder="Представьте, пожалуйста">
+					<label for="email">Ваш e-mail:</label>
+						<input id="email" type="email" placeholder="Для отправки ответа">
+					<label for="textmessage">Текст письма:</label>
+						<input type="text" id="textmessage" placeholder="В свободной форме">
+					<button class="button" type="submit">Отправить</button>
+				</form>
+			<div class="close-cross">
+				<button><img src="img/close-cross.svg" alt="Закрыть окно"></button>
+			</div>
+			</section>
 	</body>
 </html>
