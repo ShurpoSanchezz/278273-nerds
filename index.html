@@ -11,7 +11,7 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
-				<img src="img/nerds-logo.svg" alt="Нёрдс" width="160" height="68">
+				<img src="img/nerds-logo.svg" alt="Нёрдс" width="160" height="65">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="studio.html">Студия</a></li>
@@ -39,7 +39,7 @@
 				<div class="slide1-right">
 					<img src="img/slide1.png" alt="Долго, дорого, скрупулезно." width="698" height="413">
 				</div>
-			</div>
+			</div><br>
 			<div class="slide-2">
 				<div class="slide2-left">
 					<b>Любим математику как никто другой</b>
@@ -54,7 +54,7 @@
 				<div class="slide3-left">
 					<b>Только ночь, только хардкор.</b>
 					<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-					<a class="button" href="more-slide-2.html">Узнать больше</a>
+					<a class="button" href="more-slide-3.html">Узнать больше</a>
 				</div>
 				<div class="slide3-right">
 					<img src="img/slide3.png" alt="Только ночь, только хадкор.">
@@ -75,32 +75,33 @@
 		<section class="services">
 		<h2 class="visually-hidden">Услуги веб-студии "Нёрдс"</h2>
 			<ul>
-				<li>
-					<img src="img/illustration-1.jpg" alt="Веб-сайты" width="300px" height="146px">
+				<li class="web-sites">
+					<img src="img/illustration-1.jpg" alt="Веб-сайты" width="300" height="146">
 					<h3>Веб-сайты</h3>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 					<button class="button" type="submit">Заказать</button>
 				</li>
-				<li>
-					<img src="img/illustration-2.jpg" alt="Приложения" width="300px" height="146px">
+				<li class="apps">
+					<img src="img/illustration-2.jpg" alt="Приложения" width="300" height="146">
 					<h3>Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 					<button class="button" type="submit">Заказать</button>
 				</li>
-				<li>
-					<img src="img/illustration-3.jpg" alt="Презентации" width="300px" height="146px">
+				<li class="presentation">
+					<img src="img/illustration-3.jpg" alt="Презентации" width="300" height="146">
 					<h3>Презентации</h3>
 					<p>Вы даже не подозреваете насколько вы изумительны!</p>
 					<button class="button" type="submit">Заказать</button>
 				</li>
 			</ul>
 		</section>
+		<div class="horizontal-line"></div>
 		<section class="About">
 		<h2 class="visually-hidden">Информация о нас</h2>
 			<div class="about-left">
 				<b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-				<b>Выполняем заказы на разработку:</b>
+				<span>Выполняем заказы на разработку:</span>
 				<ul>
 					<li>Веб-сайтов любой сложности</li>
 					<li>Мобильных приложений для IOS и Android</li>
@@ -110,16 +111,18 @@
 			<div class="about-right">
 				<img class="about-logo" src="img/nerds-illustration.jpg" alt="Логотип Веб-студии" width="360" height="208">
 				<p>С 2004 года любим точность во всем:</p>
-				<ul class="advantage-number">
-					<li>146<sup>%</sup></li>
-					<li>100<sup>%</sup></li>
-					<li>50<sup>%</sup></li>
-				</ul>
-				<ul class="advantage-word">
-					<li>Уровень самоотдачи</li>
-					<li>Соблюдение сроков</li>
-					<li>Минимальная предоплата</li>
-				</ul>
+				<table class="advantage">
+				<tr>
+					<td>146<sup>%</sup></td>
+					<td>146<sup>%</sup></td>
+					<td>146<sup>%</sup></td>
+				</tr>
+				<tr>
+					<th>Уровень самоотдачи</th>
+					<th>Соблюдение сроков</th>
+					<th>Минимальная предоплата</th>
+				</tr>	
+				</table>
 			</div>
 		</section>
 		<section class="partners">
@@ -137,27 +140,27 @@
 				<img class="map" src="img/map.jpg" alt="map">
 				<img class="marker" src="img/map-marker.png" alt="marker">
 			</div>
-			<div class="contacts">
+			<div class="write-to-us">
 				<b>NЁRDS DESIGN STUDIO</b>
 				<br>
 				<span>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 				<br>
 				<span>тел. +7 (812) 275-75-75</span>
 				<br>
-				<button class="write-to-us">Напишите нам</button>
+				<button>Напишите нам</button>
 			</div>
 		</section>
 	</main>
 	<footer class="main-footer">
 		<ul class="social">
-			<li><a href="#"><img src="img/vk.jpg" alt="VK"></a></li>
-			<li><a href="#"><img src="img/fb.jpg" alt="Facebook"></a></li>
-			<li><a href="#"><img src="img/inst.jpg" alt="Instagram"></a></li>
+			<li><a href="htts://vk.com"><img src="img/vk-icon.svg" alt="VK"></a></li>
+			<li><a href="https://facebook.com"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
+			<li><a href="https://instagram.com"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
 		</ul>
 		<b>Давайте дружить, это выгодно!</b><br>
 		<span>Скидка 10% для друзей из социальных сетей.</span>
 	</footer>
-		<section class="modal modal-contacts">
+		<section class="modal-contacts">
 		<h2>Напишите нам</h2>
 			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
 				<label for="name">Ваше имя:</label>
@@ -168,7 +171,9 @@
 					<input type="text" id="textmessage" placeholder="В свободной форме">
 				<button class="button" type="submit">Отправить</button>
 			</form>
-		<button class="modal-close">x</button>
+		<div class="close-cross">
+			<button><img src="img/close-cross.svg" alt="Закрыть окно"></button>
+		</div>
 		</section>
   </body>
 </html>
