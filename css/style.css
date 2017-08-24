@@ -48,7 +48,7 @@ a {
 
 .site-navigation a,
 .cart-navigation a {
-	color: rgba(0, 0, 0);
+	color: #fff;
 	font-weight: 500;
 
 }
