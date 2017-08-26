@@ -12,7 +12,7 @@ html, body {
 }
 
 .visually-hidden {
-	display: none;
+	visibility: hidden;
 }
 
 a {
@@ -106,7 +106,7 @@ a {
 	margin-bottom: 30px;
 	color: #000000;
 	font-size: 55px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 55px;
 
 }
@@ -143,12 +143,12 @@ a {
 .slide-1 {
 	display: flex;
 	flex-direction: row;
-
+	margin-top: 0;
 }
 
 .slide1-left {
 	padding: 0;
-	width: 380px;
+	width: 376px;
 	margin-left: 115px;
 	margin-top: 60px;
 	margin-right: 80px;
@@ -167,7 +167,7 @@ a {
 }
 
 .slide2-left {
-	width: 560px;
+	width: 515px;
 	margin-left: 115px;
 	margin-top: 60px;
 	padding-right: 0;
@@ -175,7 +175,7 @@ a {
 }
 
 .slide2-right {
-	margin-left: -50px;
+	margin-left: 50px;
 	outline: 2px solid red;
 }
 
