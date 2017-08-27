@@ -1,6 +1,6 @@
 html, body {
 	min-width: 1200px;
-	min-height: 2300px;
+	min-height: 1400px;
 	margin: 0;
 	padding: 0;
 	font-family: Roboto, Arial, sans-serif;
@@ -27,9 +27,9 @@ a {
 }
 
 .main-header-logo {
-	margin-left: 115px;
+	margin-left: 140px;
 	margin-top: 20px;
-	margin-right: 155px;
+	margin-right: 100px;
 	width: 160px;
 	height: 65px;
 }
@@ -112,6 +112,8 @@ a {
 }
 
 .slides p {
+	padding-top: 27px;
+	padding-bottom: 42px;
 	color: #283136;
 	font-size: 16px;
 	line-height: 24px;
@@ -154,6 +156,15 @@ a {
 	outline: 2px solid red;
 }
 
+.slide1-left a {
+	padding: 19px 55px 18px 53px;
+	background-color: #fb565a;
+}
+
+.slide1-left p {
+
+}
+
 .slide1-right {
 	margin: 0;
 	padding: 0;
@@ -173,10 +184,16 @@ a {
 	outline: 2px solid red;
 }
 
+.slide2-left a {
+	padding: 19px 55px 18px 53px;
+	background-color: #fb565a;
+}
+
 .slide2-right {
 	margin-left: 50px;
 	outline: 2px solid red;
 }
+
 
 .slide-3 {
 	display: flex;
@@ -188,6 +205,15 @@ a {
 	margin-left: 115px;
 	margin-top: 60px;
 	outline: 2px solid red;
+}
+
+.slide3-left p {
+	width: 343px;
+}
+
+.slide3-left a {
+	padding: 19px 55px 18px 53px;
+	background-color: #fb565a;
 }
 
 .slide3-right {
@@ -334,7 +360,8 @@ a {
 }
 
 .horizontal-line {
-	border: none; 
+	border: none;
+	margin-left: 115px;
     background-color: grey;
     width: 1160px;
 	height: 2px;
@@ -414,8 +441,12 @@ a {
 	line-height: 18px;
 }
 
+.partners {
+	margin-left: 125px;
+}
+
 .partners li {
-	display: inline-block;
+	display: inline-flex;
 	list-style: none;
 	width: 300px;
 	opacity: 0.2;
@@ -431,28 +462,37 @@ a {
 }
 
 .write-to-us {
-	position: absolute;
-	bottom: -1900px;
-	left: 50px;
-	width: 250px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	position: relative;
+	top: -350px;
+	left: 115px;
+	width: 319px;
+	height: 310px;
 	text-align: center;
-	height: 200px;
 	background-color: #fff;
 }
 
 .write-to-us b {
 	color: #000000;
+	padding-top: 30px;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-.write-to-us span {
+.write-to-us, .address {
 	color: #666666;
+	padding-top: 33px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
+}
+
+.write-to-us, .phone {
+	padding-top: 20px;
 }
 
 .write-to-us button {
@@ -460,6 +500,8 @@ a {
 	height: 50px;
 	background-color: #fb565a;
 	color: #ffffff;
+	margin-top: 30px;
+	margin-left: 45px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -512,6 +554,8 @@ a {
 	font-weight: 700;
 }
 
+
+
 .main-footer span {
 	color: #444444;
 	font-size: 16px;
@@ -519,39 +563,66 @@ a {
 	line-height: 22px;
 }
 
+.friends {
+	margin-left: 139px;
+}
+
+.friends b {
+	margin-bottom: 12px;
+}
+
+.modal-contacts {
+	width: 960px;
+	height: 590px;
+	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+}
+
+.modal-contacts form, h2 {
+	margin-left: 80px;
+}
+
 .modal-contacts h2 {
+	margin-top: 73px;
+	margin-bottom: 49px;
 	color: #000000;
 	font-size: 45px;
 	font-weight: 500;
 	line-height: 45px;
 }
 
-.write-us-form label {
+.modal-contacts label {
+
 	color: #000000;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
 }
 
-.write-to-form input {
+.modal-contacts input {
+	position: relative;
 	width: 360px;
 	height: 50px;
 	border: 2px solid #d7dcde;
 	background-color: #ffffff;
 }
 
-.write-us-form input:hover {
+.modal-contacts input:hover {
 	border: 2px solid #b4b9bb;
 	background-color: #ffffff;
 }
-.write-us-form input:focus {
+.modal-contacts input:focus {
 	border: 2px solid #000000;
 	background-color: #ffffff;
 }
 
-.write-us-form input:invalid {
+.modal-contacts input:invalid {
 	border: 2px solid #e74246;
 	background-color: #ffffff;
+}
+
+.write-us-form input:nth-child(2) {
+	width: 760px;
+	height: 118px;
 }
 
 .write-us-form button {
@@ -565,6 +636,9 @@ a {
 }
 
 .close-cross button {
+	position: relative;
+	top: -300px;
+	left: 800px;
 	width: 21px;
 	height: 21px;
 	opacity: 0.3;
@@ -584,11 +658,22 @@ a {
 }
 
 .title-catalog h1 {
+	position: relative;
+	margin-top: 0;
+	padding-top: 50px;
+	padding-bottom: 0;
+	padding-left: 360px;
+	background-color: #eeeeee;
+	height: 200px;
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
 	color: #000000;
 	
+}
+
+.filters {
+	margin-left: 140px;
 }
 
 .filter legend {
@@ -603,8 +688,9 @@ a {
   margin-bottom: 10px;
   padding: 39px 18px;
   border-radius: 3px;
-  width: 300px;
+  width: 260px;
   background-color: #eeeeee;
+  margin-right: 140px;
 }
 
 .filter-range {
@@ -676,7 +762,25 @@ fieldset {
 
 legend {
 	margin-left: 40px;
-	margin-bottom: -25px;
+	margin-bottom: -15px;
+}
+
+.cost legend {
+	margin-left: 0;
+	margin-bottom: 40px;
+}
+
+.cost input {
+	width: 80px;
+	height: 38px;
+	text-align: center;
+	color: #283136;
+	margin-right: 46px;
+}
+
+.mesh {
+	margin-top: 20px;
+	margin-left: -40px;
 }
 
 .mesh li {
@@ -717,6 +821,10 @@ legend {
 	line-height: 20px;
 	opacity: 0.3;
 	color: #283136;
+}
+
+.feature {
+	margin-left: -40px;
 }
 
 .feature li {
@@ -763,12 +871,11 @@ legend {
 	width: 260px;
 	height: 50px;
 	background-color: #eeeeee;
+	margin-left: 0;
 }
 
 .filters button:hover,
 .filters button:focus {
-	width: 260px;
-	height: 50px;
 	background-color: #dfdfdf;
 }
 
@@ -782,7 +889,19 @@ legend {
 	flex-direction: column;
 }
 
+.sort > * {
+	outline: 3px solid red;
+}
+
+.sort {
+	display: inline-flex;
+	flex-direction: row;
+}
+
 .sort b {
+	display: inline-flex;
+	flex-direction: row;
+	margin-left: 0;
 	color: #000000;
 	font-size: 18px;
 	line-height: 18px;
@@ -791,7 +910,8 @@ legend {
 }
 
 .sort-word li {
-	display: flex;
+	display: inline-flex;
+	flex-direction: row;
 	list-style: none;
 	opacity: 0.3;
 	color: #000000;
@@ -820,7 +940,8 @@ legend {
 }
 
 .sort-dir li {
-	display: flex;
+	display: inline-flex;
+	flex-direction: row;
 	list-style: none;
 	opacity: 0.2;
 }
@@ -901,22 +1022,26 @@ legend {
 	background-color: #d7373b;
 }
 
-.pagination-list li {
-	list-style: none;
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	background-color: #eeeeee;
-} 
+.pagination-list {
+	margin-top: 60px;
+	margin-left: 50px;
+}
+
 
 .pagination-list a {
 	width: 50px;
 	height: 50px;
 	background-color: #eeeeee;
 	color: #000;
+	padding: 15px 19px;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
+}
+
+.current {
+	background-color: transparent;
+	border: 3px solid #dbdbdb;
 }
 
 .pagination-list a:hover,
@@ -941,9 +1066,6 @@ legend {
 	font-weight: 500;
 }
 
-.pagination-list .pagination-item-current:active {
-	background-color: #fff;
-	width: 50px;
-	height: 50px;
-	border: 3px solid #dbdbdb;
+.pagination-list button {
+
 }
