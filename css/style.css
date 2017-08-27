@@ -164,7 +164,6 @@ a {
 .slide1-right {
 	margin: 0;
 	padding: 0;
-	outline: 2px solid red;
 }
 
 .slide-2 {
@@ -177,7 +176,6 @@ a {
 	margin-left: 115px;
 	margin-top: 60px;
 	padding-right: 0;
-	outline: 2px solid red;
 }
 
 .slide2-left a {
@@ -187,7 +185,6 @@ a {
 
 .slide2-right {
 	margin-left: 50px;
-	outline: 2px solid red;
 }
 
 
@@ -200,7 +197,6 @@ a {
 	width: 460px;
 	margin-left: 115px;
 	margin-top: 60px;
-	outline: 2px solid red;
 }
 
 .slide3-left p {
@@ -215,11 +211,9 @@ a {
 .slide3-right {
 	magrin: 0;
 	padding: 0;
-	outline: 2px solid red;
 }
 
 .services li {
-	outline: 2px solid green;
 }
 
 .container-service ul {
