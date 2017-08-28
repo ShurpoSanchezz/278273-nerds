@@ -1,6 +1,4 @@
 html, body {
-	min-width: 1200px;
-	min-height: 1400px;
 	margin: 0;
 	padding: 0;
 	font-family: Roboto, Arial, sans-serif;
@@ -13,17 +11,29 @@ html, body {
 
 .visually-hidden {
 	visibility: hidden;
+	margin-top: -50px;
 }
 
 a {
 	text-decoration: none;
 }
 
+hr {
+	width: 1160px;
+	height: 2px;
+	background-color: grey;
+	opacity: 0.2;
+
+}
+
+.container {
+	height: 2900px;
+}
+
 .main-navigation {
 	display: flex;
 	justify-content: space-between;
 	background-color: #eeeeee;
-	outline: 3px solid #FF0000;
 }
 
 .main-header-logo {
@@ -94,8 +104,6 @@ a {
 
 .slides {
 	background-color: #eeeeee;
-	margin: 0;
-	padding: 0;
 }
 
 .slides b {
@@ -141,15 +149,14 @@ a {
 .slide-1 {
 	display: flex;
 	flex-direction: row;
+	margin-left: 140px;
 }
 
 .slide1-left {
 	padding: 0;
 	width: 380px;
-	margin-left: 115px;
-	margin-top: 60px;
-	margin-right: 80px;
-	outline: 2px solid red;
+	margin-top: 85px;
+	margin-right: 25px;
 }
 
 .slide1-left a {
@@ -158,24 +165,23 @@ a {
 }
 
 .slide1-left p {
-
+	width: 360px;
 }
 
 .slide1-right {
-	margin: 0;
-	padding: 0;
+	margin-top: 36px;
 }
 
 .slide-2 {
 	display: flex;
 	flex-direction: row;
+	margin-left: 140px;
 }
 
 .slide2-left {
 	width: 515px;
-	margin-left: 115px;
 	margin-top: 60px;
-	padding-right: 0;
+	margin-right: -50px;
 }
 
 .slide2-left a {
@@ -183,19 +189,19 @@ a {
 	background-color: #fb565a;
 }
 
-.slide2-right {
-	margin-left: 50px;
-}
+.slide2-left p {
+	width: 409px;
 
+}
 
 .slide-3 {
 	display: flex;
 	flex-direction: row;
+	margin-left: 140px;
 }
 
 .slide3-left {
 	width: 460px;
-	margin-left: 115px;
 	margin-top: 60px;
 }
 
@@ -209,15 +215,13 @@ a {
 }
 
 .slide3-right {
-	magrin: 0;
-	padding: 0;
-}
-
-.services li {
+	margin-left: -70px;
 }
 
 .container-service ul {
-	margin-left: 75px;
+	margin-top: 80px;
+	margin-left: 140px;
+	padding-left: 0;
 }
 
 .services li {
@@ -345,14 +349,6 @@ a {
 	text-transform: uppercase;
 }
 
-.horizontal-line {
-	border: none;
-	margin-left: 115px;
-    background-color: grey;
-    width: 1160px;
-	height: 2px;
-}
-
 .about {
 	display: inline-flex;
 	flex-direction: row;
@@ -360,7 +356,7 @@ a {
 
 .about-left {
 	width: 650px;
-	margin-left: 115px;
+	margin-left: 140px;
 }
 
 .about-left b {
@@ -393,7 +389,7 @@ a {
 }
 
 .about-right {
-	margin-left: 200px;
+	margin-left: 149px;
 }
 
 .about-logo {
@@ -427,8 +423,9 @@ a {
 	line-height: 18px;
 }
 
-.partners {
-	margin-left: 125px;
+.partners ul {
+	margin-left: 171px;
+	padding-left: 0;
 }
 
 .partners li {
@@ -445,6 +442,10 @@ a {
 
 .partners li:active {
 	opacity: 0.1;
+}
+
+.contacts {
+	margin-top: 80px;
 }
 
 .write-to-us {
@@ -482,6 +483,7 @@ a {
 }
 
 .write-to-us button {
+	position: relative;
 	width: 219px;
 	height: 50px;
 	background-color: #fb565a;
@@ -492,6 +494,9 @@ a {
 	line-height: 18px;
 	font-weight: 500;
 	text-transform: uppercase;
+}
+.main-footer {
+	margin-left: 140px;
 }
 
 .main-footer div {
@@ -558,6 +563,7 @@ a {
 }
 
 .modal-contacts {
+
 	width: 960px;
 	height: 590px;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
@@ -585,6 +591,7 @@ a {
 }
 
 .modal-contacts input {
+	display: flex;
 	position: relative;
 	width: 360px;
 	height: 50px;
