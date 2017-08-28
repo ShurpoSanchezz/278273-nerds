@@ -25,25 +25,22 @@ hr {
 	opacity: 0.2;
 
 }
-
-.container {
-	height: 2900px;
-}
-
 .inner {
 	width: 1160px;
+}
+
+main > * {
+	outline: 3px solid red;
 }
 
 .main-navigation {
 	display: flex;
 	justify-content: space-between;
 	background-color: #eeeeee;
+	margin: 0 auto;
 }
 
 .main-header-logo {
-	margin-left: 140px;
-	margin-top: 20px;
-	margin-right: 100px;
 	width: 160px;
 	height: 65px;
 }
@@ -57,19 +54,14 @@ hr {
 	opacity: 0.3;
 }
 
-.main-navigation-wrapper {
-	width: 100%;
-}
-
 .container-head ul {
 	display: inline-flex;
+	flex-direction: row;
 	margin-top: 50px;
 }
 
 .site-navigation li,
 .cart-navigation li {
-	margin: 0;
-	padding: 0;
 	list-style: none;
 }
 
@@ -224,6 +216,7 @@ hr {
 
 .container-service {
 	margin: 0 auto;
+	margin-top: 80px;
 }
 
 .services li {
@@ -352,13 +345,13 @@ hr {
 }
 
 .about {
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
+	margin: 0 auto;
 }
 
 .about-left {
 	width: 650px;
-	margin-left: 140px;
 }
 
 .about-left b {
@@ -425,16 +418,16 @@ hr {
 	line-height: 18px;
 }
 
-.partners ul {
-	margin-left: 171px;
-	padding-left: 0;
+.partners-list {
+	margin: 0 auto;
 }
 
 .partners li {
 	display: inline-flex;
-	list-style: none;
-	width: 300px;
+	flex-direction: row;
+	width: 199px;
 	opacity: 0.2;
+	list-style: none;
 }
 
 .partners li:hover,
@@ -444,6 +437,18 @@ hr {
 
 .partners li:active {
 	opacity: 0.1;
+}
+
+.partners li:nth-child(2) {
+	margin-left: 96px;
+}
+
+.partners li:nth-child(3) {
+	margin-left: 103px;
+}
+
+.partners li:nth-child(4) {
+	margin-left: 121px;
 }
 
 .contacts {
