@@ -20,27 +20,27 @@ a {
 
 hr {
 	width: 1160px;
-	height: 2px;
+	height: 1px;
 	background-color: grey;
-	opacity: 0.2;
+	opacity: 0.1;
 
 }
 .inner {
 	width: 1160px;
 }
 
-main > * {
-	outline: 3px solid red;
+.main-header {
+	background-color: #eeeeee;
 }
 
 .main-navigation {
 	display: flex;
 	justify-content: space-between;
-	background-color: #eeeeee;
 	margin: 0 auto;
 }
 
 .main-header-logo {
+	margin-top: 49px;
 	width: 160px;
 	height: 65px;
 }
@@ -57,7 +57,8 @@ main > * {
 .container-head ul {
 	display: inline-flex;
 	flex-direction: row;
-	margin-top: 50px;
+	margin-left: 55px;
+	margin-top: 75px;
 }
 
 .site-navigation li,
@@ -156,7 +157,7 @@ main > * {
 }
 
 .slide1-left a {
-	padding: 19px 55px 18px 53px;
+	padding: 16px 64px;
 	background-color: #fb565a;
 }
 
@@ -181,7 +182,7 @@ main > * {
 }
 
 .slide2-left a {
-	padding: 19px 55px 18px 53px;
+	padding: 16px 64px;
 	background-color: #fb565a;
 }
 
@@ -206,7 +207,7 @@ main > * {
 }
 
 .slide3-left a {
-	padding: 19px 55px 18px 53px;
+	padding: 16px 64px;
 	background-color: #fb565a;
 }
 
@@ -214,9 +215,13 @@ main > * {
 	margin-left: -70px;
 }
 
+.services {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
 .container-service {
 	margin: 0 auto;
-	margin-top: 80px;
 }
 
 .services li {
@@ -351,6 +356,8 @@ main > * {
 }
 
 .about-left {
+	margin-top: 80px;
+	margin-bottom: 75px;
 	width: 650px;
 }
 
@@ -384,6 +391,8 @@ main > * {
 }
 
 .about-right {
+	margin-top: 40px;
+	margin-bottom: 75px;
 	margin-left: 149px;
 }
 
@@ -425,6 +434,7 @@ main > * {
 .partners li {
 	display: inline-flex;
 	flex-direction: row;
+	margin: 65px 0 65px 0;
 	width: 199px;
 	opacity: 0.2;
 	list-style: none;
@@ -452,6 +462,7 @@ main > * {
 }
 
 .contacts {
+	position: relative;
 	margin-top: 80px;
 }
 
@@ -459,8 +470,8 @@ main > * {
 	display: flex;
 	flex-direction: column;
 	padding-top: 20px;
-	position: relative;
-	top: -350px;
+	position: absolute;
+	top: 90px;
 	left: 115px;
 	width: 319px;
 	height: 310px;
@@ -503,7 +514,7 @@ main > * {
 	text-transform: uppercase;
 }
 .main-footer {
-	margin-left: 140px;
+	margin: 0 auto;
 }
 
 .main-footer div {
@@ -515,6 +526,7 @@ main > * {
 	display: inline-flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 69px;
 	line-height: 85px;
 	list-style: none;
 	width: 78px;
@@ -562,6 +574,7 @@ main > * {
 }
 
 .friends {
+	margin-top: 78px;
 	margin-left: 139px;
 }
 
@@ -569,20 +582,34 @@ main > * {
 	margin-bottom: 12px;
 }
 
-.modal-contacts {
+.modal-contacts > * {
+	outline: 2px solid red;
+}
 
+.modal-contacts {
+	position: relative;
 	width: 960px;
 	height: 590px;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+
 }
 
-.modal-contacts form, h2 {
-	margin-left: 80px;
+.modal-contacts form {
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin-top: -20px;
+	margin-left: 100px;
+	padding-bottom: 47px;
+	width: 760px;
 }
 
 .modal-contacts h2 {
-	margin-top: 73px;
-	margin-bottom: 49px;
+	width: 310px;
+	height: 33px;
+	margin-left: 100px;
+	padding-top: 73px;
+	margin-bottom: 50px;
+	 
 	color: #000000;
 	font-size: 45px;
 	font-weight: 500;
@@ -590,20 +617,23 @@ main > * {
 }
 
 .modal-contacts label {
-
-	color: #000000;
-	font-size: 16px;
-	line-height: 18px;
+	display: block;
+	margin-bottom: 12px;
 	font-weight: 700;
 }
 
 .modal-contacts input {
-	display: flex;
-	position: relative;
-	width: 360px;
-	height: 50px;
-	border: 2px solid #d7dcde;
-	background-color: #ffffff;
+	padding: 18px 135px 16px 16px;
+	width: 209px;
+}
+
+.write-us-form p:nth-child(2) {
+	margin-left: 30px;
+}
+
+
+.textmessage input {
+	padding: 14px 530px 87px 15px;
 }
 
 .modal-contacts input:hover {
@@ -620,14 +650,10 @@ main > * {
 	background-color: #ffffff;
 }
 
-.write-us-form input:nth-child(2) {
-	width: 760px;
-	height: 118px;
-}
-
 .write-us-form button {
 	width: 260px;
 	height: 50px;
+	margin-top: 47px;
 	background-color: #fb565a;
 	color: #ffffff;
 	font-size: 16px;
@@ -636,9 +662,9 @@ main > * {
 }
 
 .close-cross button {
-	position: relative;
-	top: -300px;
-	left: 800px;
+	position: absolute;
+	top: 75px;
+	left: 840px;
 	width: 21px;
 	height: 21px;
 	opacity: 0.3;
