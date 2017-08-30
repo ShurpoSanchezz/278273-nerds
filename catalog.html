@@ -9,11 +9,10 @@
 	</head>
 	<body>
 		<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo" href="index.html">
+		<nav class="main-navigation inner">
+			<a class="main-header-logo">
 				<img src="img/nerds-logo.svg" alt="Веб-студия Нёрдс" width="160" height="65">
 			</a>
-			<div class="main-navigation-wrapper">
 			<div class="container-head">
 			<ul class="site-navigation">
 				<li><a href="studio.html">Студия</a></li>
@@ -23,12 +22,15 @@
 			</ul>
 			<ul class="cart-navigation">
 				<li>
-					<img src="img/cart-icon.svg" alt="Корзина">
+					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+						<circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/>
+						<circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/>
+						<path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+					</svg>
 					<a href="cart">Корзина</a>
 				</li>
 			</ul>
 			</div>
-		</div>
 		</nav>
 	</header>
 		<main class="container">
@@ -123,8 +125,9 @@
 				</form>
 			</section>
 			</div>
-			<div class="catalog-items">
-			<section class="sort">
+			<section class="main-catalog">
+			<h2 class="visually-hidden">Каталог товаров</h2>
+			<div class="sort">
 					<b>Сортировать:</b>
 					<ul class="sort-word">
 						<li><a href="#">По цене</a></li>
@@ -142,9 +145,7 @@
 							<img src="img/icon-up-dir.svg" alt="Сортировать по возрастанию">
 						</li>
 					</ul>
-			</section>
-			<section class="main-catalog">
-			<h2 class="visually-hidden">Каталог товаров</h2>
+			</div>
 				<ul class="catalog">
 					<li class="sedona">
 						<div class="head">
@@ -220,9 +221,7 @@
 		          <a href="#">4</a>
 		          <button class="button" type="submit">Следующая</button>
 		        </div>
-        		
 			</section>
-			</div>
 			<section class="contacts">
 		<h2 class="visually-hidden">Наши контакты</h2>
 <!-- 			<div class="maps">
@@ -238,12 +237,27 @@
 			</div>
 		</section>
 	</main>
-	<footer class="main-footer">
+	<footer class="main-footer inner">
 		<div class="footer-social">
 			<ul class="social">
-				<li><a href="https://vk.com"><img src="img/vk-icon.svg" alt="VK"></a></li>
-				<li><a href="https://facebook.com"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
-				<li><a href="https://instagram.com"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
+				<li><a href="https://vk.com">
+					<svg 
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 width="26px" height="15px">
+						<image  x="0px" y="0px" width="26px" height="15px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAAA/CAQAAACvdeUfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhCB0WChfiWBSLAAAD2klEQVRo3s1b7WGbMBB9YoEyAt2AThC6ARtEniD2BCUTOJkg7gRJJ8CZwGyAO4HpBNcfNgmOAd0T8sf75RjpdO++kE6OQVBIigx3iJENDmlQYYt3vJkm7Npng6RSCoPlObUxe5UQOweuHbQsXujVH01BGC5BohrYmAqAWNmp7FtLPrYo5asWOzWppVLLT10pRfIRYlwYtshUtAoPk1HDa4cCVmpSAasixkoVkQiNNhwAJGPhCJgVfqAi5EGTNZIrc+sIEd6o8Q/jj02Dn5SpNLj3mFNFeKQmZJI4qa1CspIEuce0P5HZkj775RYakhis16wVAMm4eiOxSyohrXBIiqky3+IFiACzphI+xtw5ZquW5lo5d28detCml9iwPiPeaZlDUu3hryUARABgVoSNdT4LArEehb7Z+ys6/MnVxgd3ngWBu1CdYrE/NRyIBfZZFYKVl7/WZrX/EH189ZsSMO6zfyGIefirwaz9+EnsidoxnD3PpPDw16PZ9ooiq8/gwoSkbECCz/ur7EqIOp85nwHnPAEv6fdXJwy/EDMNnilRue40xUMyj43UrDcMDwLZABg4nxGhmPTO39Bh6GpLyJwUWPRKedFOn2iWFhvFe5XcxOz6bK7fUvXMTeiysZP0VE508g23B4k9elPjeKXLxsJUqnH0xnN+IkFv8+zLTD4M9YaVnBaeHs2PiZlHxMiToYguuzoLlKT4uiueMkzH25KGya4xYpMsJ0tmXsfPG3pVS9ECmIL9gXJPjX4X5gdv8bR8ypZH0RWpxUpOK7iTJdnAbldjsqtDja9Pl0U2rr8ZoVb7dGAvhCez8CeW4/Xa+g+gwXfXtWE0/Mi8ka3Uy0FxGxqNPl0E78OHwV/3kFFiZkue0C6Fb+4hxjVANkivzeME03LsgJlzxOWhOFM4iZmKPMhcBrnrNwfOUARuNByBWdsc7YM7FIHbDEfgxXUJpQDdC7kUpp/f5fXaHDhqqhwDAImxudG948r0pIqaGCApNvrR16amKx57G1Q3WkQAOznXPE7WV841PbXyDEqVYqXwum/uYtoliVfTRWVriSfHg70lasetu6nU8tuhNv8iexo1ttN4RmrJiexp1LjecC+1MgCt3jfjxF1OgG3WNNsOKjE5HrLp1LS/KB5CMSDXp2H7iZoiMahCOUEFOyiXv6JQGIwlN/dWYiRoPK5GwvoMACT2bIlno1K5X+UdIRAxAJDE43Ihc8jMfWMhILGD5yxR0RT/UCCp1x4yVCie+G6uKilWaayC/f2JpMRB04NghhQx7nofbvGsvO0HIDEs7h29svVB7rtZAf8B0DajeJtJSIcAAAAASUVORK5CYII=" />
+					</svg>
+				</a></li>
+				<li><a href="https://facebook.com">
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+						<path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+					</svg>
+				</a></li>
+				<li><a href="https://instagram.com">
+					<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+						<path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+					</svg>
+				</a></li>
 			</ul>
 		</div>
 		<div class="friends">
