@@ -521,7 +521,7 @@ hr {
 	margin: 52px 0 44px 121px;
 }
 
-.partners li:after {
+.partners li:nth-child(2):after {
 	position: absolute;
 	left: -50px;
 	top: 10px;
@@ -529,6 +529,25 @@ hr {
 	position: absolute;
 	height: 52px;
 	border-left: 2px solid grey;
+}
+
+.partners li:nth-child(3):after {
+	position: absolute;
+	left: -50px;
+	top: 10px;
+	content: "";
+	position: absolute;
+	height: 52px;
+	border-left: 2px solid grey;
+}
+
+.partners li:nth-child(4):after {
+	position: absolute;
+	left: -50px;
+	top: 30px;
+	content: "";
+	height: 52px;
+	border: 1px solid grey;
 }
 
 .contacts {
@@ -878,21 +897,21 @@ fieldset {
 }
 
 .mesh ul {
-	margin-top: -10px;
+	margin-top: 10px;
 	padding-left: 0;
 	list-style: none;
 }
 
-.mesh input {
+.mesh label {
 	opacity: 0.4;
 }
 
-.mesh input:hover,
-.mesh input:focus {
-	background-color: #4d4d4d;
+.mesh label:hover,
+.mesh label:focus {
+	color: #4d4d4d;
 }
 
-.mesh input:disabled {
+.mesh label:disabled {
 	opacity: 0.1;
 }
 
