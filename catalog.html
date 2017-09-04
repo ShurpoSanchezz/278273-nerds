@@ -40,30 +40,22 @@
 			<div class="filters-catalog">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<form class="filter" method="post" action="https://echo.htmlacademy.ru">
 					<fieldset class="cost">
 						<legend>Стоимость:</legend>
-							<div class="filter">
-							  <div class="filter-range-wrapper">
-							    <div class="filter-range">
-							      <div class="filter-range-scale">
-							        <div class="filter-range-bar"></div>
-							      </div>
-							      <div class="filter-range-handle min"></div>
-							      <div class="filter-range-handle max"></div>
-							    </div>
-							  </div>
-							  <div class="filter-interval">
-							    <label>
-							    	От
-							    	<input type="text" name="min-interval" value="0">
-							    </label>
-							    <label>
-							    	До 
-							    	<input type="text" name="max-interval" value="15000">
-							    </label>
-							  </div>
-							</div>
+						<form class="filter" method="post" action="https://echo.htmlacademy.ru">
+							<div class="range-filter">
+						        <div class="range-controls">
+						          <div class="scale">
+						            <div class="bar" style="margin-left: 0%; width: 65%"></div>
+						          </div>
+						          <div class="toggle toggle-min"></div>
+						          <div class="toggle toggle-max"></div>
+						        </div>
+						        <div class="price-controls">
+						          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+						          <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+						        </div>
+						    </div>
 					</fieldset>
 					<fieldset class="mesh">
 						<legend>Сетка:</legend>
