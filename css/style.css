@@ -933,7 +933,7 @@ input[type="radio"] {
 	border-radius: 20px;
 }
 
-input[type="radio"]:checked + label::before {
+.mesh input[type="radio"]:checked + label::before {
 	content: "\2022";
 	position: absolute;
 	left: -30px;
