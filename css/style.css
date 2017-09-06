@@ -128,6 +128,7 @@ hr {
 }
 
 .slides {
+	height: 425px;
 	background-color: #eeeeee;
 }
 
@@ -247,7 +248,7 @@ hr {
 }
 
 .services {
-	margin-top: 100px;
+	margin-top: 80px;
 	margin-bottom: 100px;
 }
 
@@ -278,11 +279,16 @@ hr {
 }
 
 .services h3 {
+	margin-bottom: 0;
 	color: #000000;
 	line-height: 30px;
 	font-size: 24px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.services p {
+	padding-top: -40px;
 }
 
 .web-sites p {
@@ -293,11 +299,11 @@ hr {
 	line-height: 24px;
 }
 
-.presentation p {
-	width: 220px;
-}
+
+
 
 .web-sites .button {
+	padding-top: 10px;
 	width: 160px;
 	height: 50px;
 	background-color: #fb565a;
@@ -353,6 +359,10 @@ hr {
 	text-transform: uppercase;
 }
 
+.presentation p {
+	width: 220px;
+}
+
 .presentation .button {
 	width: 160px;
 	height: 50px;
@@ -389,7 +399,7 @@ hr {
 }
 
 .about-left {
-	margin-top: 80px;
+	margin-top: 60px;
 	margin-bottom: 40px;
 	width: 650px;
 }
@@ -399,6 +409,7 @@ hr {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
+	width: 750px;
 }
 
 .about-left p {
@@ -441,21 +452,22 @@ hr {
 .about-right {
 	margin-top: 40px;
 	margin-bottom: 40px;
-	margin-left: 149px;
+	margin-left: 100px;
 }
 
 .about-logo {
 	width: 360px;
 	height: 208px;
+	padding-left: 50px;
 	margin-bottom: 18px;
 
 }
 
 .about-right p {
 	width: 350px;
-	padding-left: 20px;
-	margin-bottom: 60px;
-	margin-right: 30px;
+	padding-left: 40px;
+	padding-bottom: 70px;
+	margin: 0;
 	color: #000000;
 	font-size: 16px;
 	line-height: 24px;
@@ -507,7 +519,7 @@ hr {
 }
 
 .partners li:nth-child(1) {
-	margin: 62px 0 50px;
+	margin: 50px 0 50px;
 }
 
 .partners li:nth-child(2) {
@@ -515,7 +527,7 @@ hr {
 }
 
 .partners li:nth-child(3) {
-	margin: 65px 0 63px 103px;
+	margin: -120px 0 63px 103px;
 }
 
 .partners li:nth-child(4) {
@@ -553,7 +565,7 @@ hr {
 
 .contacts {
 	position: relative;
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 .write-to-us {
@@ -562,7 +574,7 @@ hr {
 	padding-top: 20px;
 	position: absolute;
 	top: 50px;
-	left: 115px;
+	left: 195px;
 	width: 319px;
 	height: 310px;
 	text-align: center;
@@ -605,6 +617,7 @@ hr {
 }
 .main-footer {
 	margin: 0 auto;
+	padding-left: 40px;
 }
 
 .main-footer div {
@@ -892,7 +905,7 @@ fieldset {
 	margin-bottom: 45px;
 }
 
-.mesh legend {
+.choice-grid legend {
 	padding-top: 25px;
 	color: #283136;
 	font-size: 18px;
@@ -901,13 +914,13 @@ fieldset {
 	text-transform: uppercase;
 }
 
-.mesh ul {
+.choice-grid ul {
 	margin-top: 7px;
 	padding-left: 0;
 	list-style: none;
 }
 
-.mesh label {
+.choice-grid label {
 	position: relative;
 	margin-left: 30px;
 	font-size: 16px;
@@ -923,35 +936,49 @@ input[type="radio"] {
   opacity: 0;
 }
 
-.mesh label:before {
+.choice-grid label:before {
 	content: "";
 	position: absolute;
 	left: -30px;
-	width: 20px;
-	height: 20px;
-	border: 3px solid #a6a6a6;
-	border-radius: 20px;
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/radio-off.svg);
+	background-repeat: no-repeat;
+	opacity: 0.4;
 }
 
-.mesh input[type="radio"]:checked + label::before {
-	content: "\2022";
+.choice-grid input[type="radio"]:checked + label::before {
+	content: "";
 	position: absolute;
 	left: -30px;
-	height: 15px;
-	width: 15px;
-	border-radius: 10px;
-	border: 1px solid red;
-	background-color: red;
+	height: 35px;
+	width: 35px;
+	opacity: 1;
+	background-image: url(../img/radio-on.svg);
+	background-repeat: no-repeat;
+	opacity: 0.4;
+}
+
+.choice-grid input[type="radio"]:hover + label::before,
+.choice-grid input[type="radio"]:focus + label::before {
 	opacity: 1;
 }
 
+.choice-grid input[type="radio"]:disabled + label::before {
+	opacity: 0.1;
+}
 
-.mesh li {
+.choice-grid input[type="radio"]:disabled + label {
+	opacity: 0.3;
+}
+
+
+.choice-grid li {
 	padding-bottom: 20px;
 }
 
-.mesh label:hover,
-.mesh label:focus {
+.choice-grid label:hover,
+.choice-grid label:focus {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
@@ -964,7 +991,7 @@ input[type="radio"] {
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .feature ul {
@@ -972,11 +999,10 @@ input[type="radio"] {
 	margin-left: 30px;
 	list-style: none;
 	padding-left: 0;
-	margin-top: 7px;
 }
 
 .feature li {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .feature input {
@@ -1025,11 +1051,32 @@ input[type="checkbox"] {
 .feature label:before {
 	content: "";
 	position: absolute;
-
 	left: -30px;
-	width: 20px;
-	height: 20px;
-	border: 3px solid #a6a6a6;
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+	opacity: 0.4;
+}
+
+.feature input[type="checkbox"]:checked + label::before {
+	content: "";
+	position: absolute;
+	left: -30px;
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/checkbox-on.svg);
+	background-repeat: no-repeat;
+	opacity: 0.4;
+}
+
+.feature input[type="checkbox"]:disabled + label::before {
+	opacity: 0.1;
+}
+
+.feature input[type="checkbox"]:hover + label::before,
+.feature input[type="checkbox"]:focus + label::before {
+	opacity: 1;
 }
 
 .filters button {
@@ -1216,7 +1263,6 @@ li:hover svg{
 
 .pagination-list {
 	margin-top: 60px;
-	margin-left: 50px;
 }
 
 
@@ -1229,6 +1275,7 @@ li:hover svg{
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
+
 }
 
 .pagination-list a:nth-child(1) {
@@ -1266,6 +1313,7 @@ li:hover svg{
 	height: 50px;
 	background-color: #eeeeee;
 	margin-left: 0;
+	text-transform: uppercase;
 }
 
 .pagination-list button:hover,
