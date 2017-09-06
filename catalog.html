@@ -57,26 +57,20 @@
 						        </div>
 						    </div>
 					</fieldset>
-					<fieldset class="mesh">
+					<fieldset class="choice-grid">
 						<legend>Сетка:</legend>
 							<ul>
 								<li>
-									<label>
-										<input type="radio" name="mesh" value="adaptive" checked>
-										Адаптивная
-									</label>
+									<input id="adaptive" type="radio" name="choice-grid" value="adaptive" checked>
+									<label for="adaptive">Адаптивная</label>	
 								</li>
 								<li>
-									<label>
-										<input type="radio" name="mesh" value="fixed">
-										Фиксированная
-									</label>
+									<input id="fixed" type="radio" name="choice-grid" value="fixed">
+									<label for="fixed">Фиксированная</label>
 								</li>
 								<li>
-									<label>
-										<input type="radio" name="mesh" value="rubber" disabled>
-										Резиновая
-									</label>
+									<input id="rubber" type="radio" name="choice-grid" value="rubber" disabled>
+									<label for="rubber">Резиновая</label>
 								</li>
 							</ul>
 					</fieldset>
@@ -84,34 +78,24 @@
 						<legend>Особенности:</legend>
 							<ul>
 								<li>
-									<label>
-										<input type="checkbox" name="feature" value="slider" checked>
-										Слайдер
-									</label>
+									<input id="slide" type="checkbox" name="feature" value="slider" checked>
+									<label for="slide">Слайдер</label>
 								</li>
 								<li>
-									<label>
-										<input type="checkbox" name="feature" value="block-advantage">
-										Блок преимуществ
-									</label>
+									<input id="block-advantage" type="checkbox" name="feature" value="block-advantage">
+									<label for="block-advantage">Блок преимуществ</label>
 								</li>
 								<li>
-									<label>
-										<input type="checkbox" name="feature" value="news" checked>
-										Новости
-									</label>
+									<input id="news" type="checkbox" name="feature" value="news" checked>
+									<label for="news">Новости</label>
 								</li>
 								<li>
-									<label>
-										<input type="checkbox" name="feature" value="gallery">
-										Галерея
-									</label>
+									<input id="gallery" type="checkbox" name="feature" value="gallery">
+									<label for="gallery">Галерея</label>
 								</li>
 								<li>
-									<label>
-										<input type="checkbox" name="feature" value="cart">
-										Корзина
-									</label>
+									<input id="cart" type="checkbox" name="feature" value="cart">
+									<label for="cart">Корзина</label>
 								</li>
 							</ul>
 					</fieldset>
