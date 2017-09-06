@@ -992,6 +992,7 @@ input[type="radio"] {
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 10px;
+
 }
 
 .feature ul {
@@ -999,6 +1000,7 @@ input[type="radio"] {
 	margin-left: 30px;
 	list-style: none;
 	padding-left: 0;
+	margin-bottom: 50px;
 }
 
 .feature li {
@@ -1040,6 +1042,7 @@ input[type="radio"] {
 	line-height: 20px;
 	opacity: 0.3;
 	color: #283136;
+	opacity: 0.3;
 }
 
 input[type="checkbox"] {
