@@ -581,7 +581,7 @@ hr {
 
 .contacts-wrapper {
 	position: absolute;
-	top: 0;
+	top: 50px;
   buttom: 0;
   left: 0;
   right: 0;
