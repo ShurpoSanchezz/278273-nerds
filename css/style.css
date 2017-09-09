@@ -416,7 +416,6 @@ hr {
 }
 
 .about-left span {
-	mar
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -581,6 +580,7 @@ hr {
 
 .contacts-wrapper {
 	position: absolute;
+<<<<<<< d11b7b732fcd9ffcd0b5ebe1fe1301363193f735
 	top: 50px;
   buttom: 0;
   left: 0;
@@ -588,6 +588,15 @@ hr {
   display: flex;
   align-items: center;
   margin: 0 auto;
+=======
+	top: 30px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+>>>>>>> b3b0b8dd36c1f9f0aac4a2a240f07e3ddd2563a9
 }
 
 .write-to-us {
@@ -611,7 +620,7 @@ hr {
 
 .write-to-us, .address {
 	color: #666666;
-	padding-top: 33px;
+	padding-top: 22px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
@@ -711,12 +720,33 @@ hr {
 }
 
 .modal-contacts {
+	display: none;
 	position: relative;
 	width: 960px;
 	height: 590px;
+	background-color: #fff;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
-
 }
+
+.modal-show {
+	display: block;
+	position: fixed;
+	top: 15%;
+	left: 20%;
+	animation-name: bounce;
+	animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 .modal-contacts form {
 	display: inline-flex;
@@ -731,7 +761,7 @@ hr {
 	width: 320px;
 	height: 33px;
 	margin-left: 100px;
-	padding-top: 73px;
+	padding-top: 30px;
 	margin-bottom: 50px;
 	 
 	color: #000000;
@@ -777,7 +807,7 @@ hr {
 .write-us-form button {
 	width: 260px;
 	height: 50px;
-	margin-top: 47px;
+	margin-top: 10px;
 	background-color: #fb565a;
 	color: #ffffff;
 	font-size: 16px;
@@ -785,17 +815,40 @@ hr {
 	font-weight: 500;
 }
 
-.close-cross button {
+.close-cross {
 	position: absolute;
 	top: 75px;
 	left: 840px;
-	width: 21px;
-	height: 21px;
+	width: 25px;
+	height: 25px;
 	opacity: 0.3;
+	font-size: 0;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
 }
 
-.close-cross button:hover,
-.close-cross button:focus {
+.close-cross:before,
+.close-cross:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	width: 25px;
+	height: 3px;
+	background-color: red;
+}
+
+.close-cross:before {
+	transform: rotate(45deg);
+}
+
+.close-cross:after {
+	transform: rotate(-45deg);
+}
+
+.close-cross:hover,
+.close-cross:focus {
 	width: 21px;
 	height: 21px;
 	opacity: 1;
