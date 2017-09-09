@@ -6,6 +6,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css" type="text/css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/minify.css" type="text/css">
 	</head>
 	<body>
 		<header class="main-header wrapper">
@@ -40,9 +41,9 @@
 			<div class="filters-catalog">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
+				<form class="filter" method="post" action="https://echo.htmlacademy.ru">
 					<fieldset class="cost">
 						<legend>Стоимость:</legend>
-						<form class="filter" method="post" action="https://echo.htmlacademy.ru">
 							<div class="range-filter">
 						        <div class="range-controls">
 						          <div class="scale">
@@ -210,18 +211,18 @@
 			</section>
 			
 	</main>
-	<div class="contacts-wrapper">
-	<section class="contacts">
-		<h2 class="visually-hidden">Наши контакты</h2>
-      		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58940811282a1246139c77e965ef2d3c3b6cf36724ea7f2b16ccdc4d66098112&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script>
-			<div class="write-to-us ">
-				<b>NЁRDS DESIGN STUDIO</b>
-				<span class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-				<span class="phone">тел. +7 (812) 275-75-75</span>
-				<button>Напишите нам</button>
-			</div>
-	</section>
-	</div>
+	<section class="contacts wrapper">
+			<h2 class="visually-hidden">Наши контакты</h2>
+      			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58940811282a1246139c77e965ef2d3c3b6cf36724ea7f2b16ccdc4d66098112&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script>
+				<div class="contacts-wrapper inner">
+					<div class="write-to-us">
+						<b>NЁRDS DESIGN STUDIO</b>
+						<span class="address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</span>
+						<span class="phone">тел. +7 (812) 275-75-75</span>
+						<button class="button-write" type="submit">Напишите нам</button>
+					</div>
+				</div>
+		</section>
 	<footer class="main-footer inner">
 		<div class="footer-social">
 			<ul class="social">
@@ -267,9 +268,35 @@
 				</p>
 				<button class="button" type="submit">Отправить</button>
 			</form>
-		<div class="close-cross">
-			<button><img src="img/close-cross.svg" alt="Закрыть окно"></button>
-		</div>
+			<button class="close-cross">Закрыть</button>
 		</section>
+
+		<script>
+			var link = document.querySelector(".button-write");
+			var popup = document.querySelector(".modal-contacts");
+			var close = popup.querySelector(".close-cross");
+			var form = popup.querySelector("form");
+
+
+			link.addEventListener("click", function (evt) {
+			    evt.preventDefault();
+			    popup.classList.add("modal-show");
+			});
+
+			close.addEventListener("click", function (evt) {
+				    evt.preventDefault();
+				    popup.classList.remove("modal-show");
+				    popup.classList.remove("modal-error");
+			});
+
+			window.addEventListener("keydown", function (evt) {
+			    if (evt.keyCode === 27) {
+			      if (popup.classList.contains("modal-show")) {
+			        popup.classList.remove("modal-show");
+			        popup.classList.remove("modal-error");
+			      }
+			    }
+			});
+		</script>
 	</body>
 </html>
