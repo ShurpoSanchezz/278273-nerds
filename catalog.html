@@ -133,7 +133,7 @@
 						<div class="hover">
 							<b>Sedona</b><br>
 							<span>Информационный сайт<br> для туристов</span><br>
-							<button class="button" type="submit">9 900 руб.</button>
+							<span class="price">9 900 руб.</span>
 						</div>
 					</li>
 					<li class="pink">
@@ -146,7 +146,7 @@
 						<div class="hover">
 							<b>Pink App</b><br>
 							<span>Продуктовый лендинг<br> приложения для iOS и Android</span><br>
-							<button class="button" type="submit">9 900 руб.</button>
+							<span class="price">9 900 руб.</span>
 						</div>
 					</li>
 					<li class="barbershop">
@@ -159,7 +159,7 @@
 						<div class="hover">
 							<b>Barbershop</b><br>
 							<span>Сайт салоны красоты<br> Для мужчин, да.</span><br>
-							<button class="button" type="submit">9 900 руб.</button>
+							<span class="price">9 900 руб.</span>
 						</div>
 					</li>
 					<li class="mishka">
@@ -172,7 +172,7 @@
 						<div class="hover">
 							<b>Mishka</b><br>
 							<span>Интернет-магазин<br> вязаных игрушек</span><br>
-							<button class="button" type="submit">9 900 руб.</button>
+							<span class="price">9 900 руб.</span>
 						</div>
 					</li>
 					<li class="aplus">
@@ -185,7 +185,7 @@
 						<div class="hover">
 							<b>A Plus</b><br>
 							<span>Лендинг курсов повышения<br> квалификации</span><br>
-							<button class="button" type="submit">9 900 руб.</button>
+							<span class="price">9 900 руб.</span>
 						</div>
 					</li>
 					<li class="Kvast">
@@ -198,7 +198,7 @@
 						<div class="hover">
 							<b>Кваст</b><br>
 							<span>Промо-сайт производителя<br> крафтового кваса</span><br>
-							<button class="button" type="submit">9 900 руб.</button>
+							<span class="price">9 900 руб.</span>
 						</div>
 					</li>
 				</ul>
@@ -271,32 +271,6 @@
 			<button class="close-cross">Закрыть</button>
 		</section>
 
-		<script>
-			var link = document.querySelector(".button-write");
-			var popup = document.querySelector(".modal-contacts");
-			var close = popup.querySelector(".close-cross");
-			var form = popup.querySelector("form");
-
-
-			link.addEventListener("click", function (evt) {
-			    evt.preventDefault();
-			    popup.classList.add("modal-show");
-			});
-
-			close.addEventListener("click", function (evt) {
-				    evt.preventDefault();
-				    popup.classList.remove("modal-show");
-				    popup.classList.remove("modal-error");
-			});
-
-			window.addEventListener("keydown", function (evt) {
-			    if (evt.keyCode === 27) {
-			      if (popup.classList.contains("modal-show")) {
-			        popup.classList.remove("modal-show");
-			        popup.classList.remove("modal-error");
-			      }
-			    }
-			});
-		</script>
+		<script src="js/modal-write.js"></script>
 	</body>
 </html>
