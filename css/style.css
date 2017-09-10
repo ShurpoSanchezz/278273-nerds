@@ -27,6 +27,7 @@ hr {
 
 }
 
+
 .wrapper {
 	min-width: 1160px;
 }
@@ -149,6 +150,7 @@ hr {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
+
 }
 
 .slides a {
@@ -193,6 +195,9 @@ hr {
 
 .slide1-left p {
 	width: 360px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 }
 
 .slide1-right {
@@ -305,6 +310,7 @@ hr {
 	background-color: #fb565a;
 	color: #fff;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .web-sites .button:hover,
@@ -333,6 +339,7 @@ hr {
 	background-color: #00ca74;
 	color: #fff;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .apps .button:hover,
@@ -365,6 +372,7 @@ hr {
 	background-color: #efc84a;
 	color: #fff;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .presentation .button:hover,
@@ -505,7 +513,7 @@ hr {
 	margin: 0 auto;
 }
 
-.partners li {
+.partners-list li {
 	position: relative;
 	display: inline-flex;
 	flex-direction: row;
@@ -517,32 +525,34 @@ hr {
 	list-style: none;
 }
 
-.partners li:hover,
-.partners li:focus {
+.partners-item img:hover {
 	opacity: 1;
 }
+// .partners-list img:focus {
+// 	opacity: 1;
+// }
 
-.partners li:active {
+.partners-list img:active {
 	opacity: 0.1;
 }
 
-.partners li:nth-child(1) {
+.partners-item:nth-child(1) {
 	margin: 50px 0 50px;
 }
 
-.partners li:nth-child(2) {
+.partners-item:nth-child(2) {
 	margin: 46px 0 44px 96px;
 }
 
-.partners li:nth-child(3) {
+.partners-item:nth-child(3) {
 	margin: 65px 0 63px 103px;
 }
 
-.partners li:nth-child(4) {
+.partners-item:nth-child(4) {
 	margin: 45px 0 30px 110px;
 }
 
-.partners li:nth-child(2):after {
+.partners-item:nth-child(2)::after {
 	position: absolute;
 	left: -50px;
 	top: 20px;
@@ -552,7 +562,7 @@ hr {
 	border-left: 2px solid grey;
 }
 
-.partners li:nth-child(3):after {
+.partners-item:nth-child(3)::after {
 	position: absolute;
 	left: -50px;
 	top: 0;
@@ -562,7 +572,7 @@ hr {
 	border-left: 2px solid grey;
 }
 
-.partners li:nth-child(4):after {
+.partners-item:nth-child(4)::after {
 	position: absolute;
 	left: -50px;
 	top: 15px;
@@ -571,8 +581,6 @@ hr {
 	border: 1px solid grey;
 }
 
-
-
 .contacts {
 	position: relative;
 	margin-top: 60px;
@@ -580,15 +588,6 @@ hr {
 
 .contacts-wrapper {
 	position: absolute;
-<<<<<<< d11b7b732fcd9ffcd0b5ebe1fe1301363193f735
-	top: 50px;
-  buttom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-=======
 	top: 30px;
 	bottom: 0;
 	left: 0;
@@ -596,7 +595,6 @@ hr {
 	display: flex;
 	align-items: center;
 	margin: 0 auto;
->>>>>>> b3b0b8dd36c1f9f0aac4a2a240f07e3ddd2563a9
 }
 
 .write-to-us {
@@ -642,10 +640,12 @@ hr {
 	line-height: 18px;
 	font-weight: 500;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 .main-footer {
 	margin: 0 auto;
 	margin-top: -30px;
+	padding-bottom: 70px;
 }
 
 .main-footer div {
@@ -1161,6 +1161,7 @@ input[type="checkbox"] {
 }
 
 .filters button {
+	cursor: pointer;
 	box-shadow: none;
 	width: 260px;
 	height: 50px;
@@ -1310,6 +1311,7 @@ li:hover svg{
 }
 
 .catalog button {
+	cursor: pointer;
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
@@ -1392,6 +1394,7 @@ li:hover svg{
 }
 
 .pagination-list button {
+	cursor: pointer;
 	box-shadow: none;
 	width: 260px;
 	height: 50px;
