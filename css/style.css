@@ -521,16 +521,18 @@ hr {
 	vertical-align: middle;
 	justify-content: center;
 	width: 199px;
-	opacity: 0.2;
 	list-style: none;
 }
 
-.partners-list img:hover {
+.partners-list img {
+	opacity: 0.2;
+}
+
+.partners-list img:hover,
+.partners-list img:focus {
 	opacity: 1;
 }
-// .partners-list img:focus {
-// 	opacity: 1;
-// }
+
 
 .partners-list img:active {
 	opacity: 0.1;
@@ -559,7 +561,7 @@ hr {
 	content: "";
 	position: absolute;
 	height: 52px;
-	border-left: 2px solid grey;
+	border-left: 2px solid #f4f4f4;
 }
 
 .partners-list li:nth-child(3)::after {
@@ -569,7 +571,7 @@ hr {
 	content: "";
 	position: absolute;
 	height: 52px;
-	border-left: 2px solid grey;
+	border-left: 2px solid #f4f4f4;
 }
 
 .partners-list li:nth-child(4)::after {
@@ -578,7 +580,7 @@ hr {
 	top: 15px;
 	content: "";
 	height: 52px;
-	border: 1px solid grey;
+	border-left: 1px solid #f4f4f4;
 }
 
 .contacts {
