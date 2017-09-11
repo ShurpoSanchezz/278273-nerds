@@ -167,6 +167,7 @@ hr {
 	height: 50px;
 	background-color: #fb565a;
 	color: #ffffff;
+	text-transform: uppercase;
 }
 
 .slides a:hover,
@@ -283,7 +284,7 @@ hr {
 }
 
 .services p {
-	margin-bottom: 25px;
+	margin-bottom: 37px;
 }
 
 .container-service {
@@ -336,26 +337,25 @@ hr {
 
 .web-sites .button {
 	width: 160px;
-	height: 50px;
+	padding: 10px 0;
 	background-color: #fb565a;
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 0;
+	text-align: center;
 }
 
 .web-sites .button:hover,
 .web-sites .button:focus {
-	width: 160px;
-	height: 50px;
+	
 	background-color: #e74246;
 	color: #fff;
 	text-transform: uppercase;
 }
 
 .web-sites .button:active {
-	width: 160px;
-	height: 50px;
+	
 	-webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: #d7373b;
@@ -367,26 +367,27 @@ hr {
 
 .apps .button {
 	width: 160px;
-	height: 50px;
+	padding: 10px 0;
 	background-color: #00ca74;
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 0;
+	text-align: center;
 }
 
 .apps .button:hover,
 .apps .button:focus {
 	width: 160px;
-	height: 50px;
+	padding: 10px 0;
 	background-color: #00bc6c;
 	color: #fff;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .apps .button:active {
 	width: 160px;
-	height: 50px;
 	-webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: #00aa62;
@@ -402,18 +403,18 @@ hr {
 
 .presentation .button {
 	width: 160px;
-	height: 50px;
+	padding: 10px 0;
 	background-color: #efc84a;
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 0;
+	text-align: center;
 }
 
 .presentation .button:hover,
 .presentation .button:focus {
 	width: 160px;
-	height: 50px;
 	background-color: #eab534;
 	color: #fff;
 	text-transform: uppercase;
@@ -525,7 +526,7 @@ hr {
 
 .advantage {
 	width: 20px;
-	margin-left: 45px;
+	margin-left: 56px;
 }
 
 
@@ -547,6 +548,10 @@ hr {
 	font-weight: 400;
 	line-height: 18px;
 	text-align: left;
+}
+
+.advantage sup {
+	font-size: 50%;
 }
 
 
@@ -689,11 +694,12 @@ hr {
 	padding-top: 20px;
 }
 
-.write-to-us button {
-	position: relative;
+.write-to-us a {
+	text-align: center;
 	width: 219px;
-	height: 50px;
+	padding: 15px 0;
 	border: 0;
+	font-family: "Roboto", "Arial", sans-serif;
 	background-color: #fb565a;
 	color: #ffffff;
 	margin-top: 30px;
@@ -705,11 +711,11 @@ hr {
 	cursor: pointer;
 }
 
-.write-to-us button:hover,
-.write-to-us button:focus {
-	position: relative;
+.write-to-us a:hover,
+.write-to-us a:focus {
+	text-align: center;
 	width: 219px;
-	height: 50px;
+	padding: 15px 0;
 	border: 0;
 	background-color: #e74246;
 	color: #ffffff;
@@ -722,10 +728,11 @@ hr {
 	cursor: pointer;
 }
 
-.write-to-us button:active {
-	position: relative;
+.write-to-us a:active {
+	text-align: center;
 	width: 219px;
-	height: 50px;
+	padding: 15px 0;
+
 	border: 0;
 	-webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
@@ -949,6 +956,7 @@ hr {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
+	border: 0;
 }
 
 .close-cross {
@@ -994,7 +1002,7 @@ hr {
 	opacity: 1;
 }
 
-.close-cross button:active {
+.close-cross:active {
 	width: 21px;
 	height: 21px;
 	opacity: 0.1;
@@ -1064,6 +1072,7 @@ fieldset {
 .range-controls .bar {
   width: 70%;
   height: 2px;
+  margin-left: 0%;
   background: #00ca74;
 }
 
@@ -1086,18 +1095,20 @@ fieldset {
 }
 
 .range-controls .toggle-max {
-  left: 150px;
+  left: 170px;
 }
 
 .price-controls {
   font-size: 0;
+
 }
 
 .price-controls label {
 	text-transform: uppercase;
-  font-size: 16px;
-  display: inline-block;
-  width: 50%;
+	font-size: 16px;
+	display: inline-block;
+	width: 50%;
+	font-weight: 400;
 }
 
 .max-price {
@@ -1314,6 +1325,11 @@ input[type="checkbox"] {
 	margin-top: -20px;
 	text-transform: uppercase;
 	border: 0;
+	color: #000000;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
 }
 
 .filters button:hover,
@@ -1485,6 +1501,7 @@ li:hover svg{
 	right: 70px;
 	padding: 15px 70px;
 	color: #ffffff;
+	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1501,6 +1518,7 @@ li:hover svg{
 	right: 70px;
 	padding: 15px 70px;
 	color: #ffffff;
+	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1516,6 +1534,7 @@ li:hover svg{
 	right: 70px;
 	padding: 15px 70px;
 	color: #ffffff;
+	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1528,7 +1547,7 @@ li:hover svg{
 }
 
 .pagination-list {
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 .pagination-list a:nth-child(1) {
@@ -1569,7 +1588,7 @@ li:hover svg{
 	width: 260px;
 	height: 50px;
 	background-color: #eeeeee;
-	margin-left: 0;
+	margin-right: 5px;
 	text-transform: uppercase;
 	padding: 15px 19px;
 	color: #000;
