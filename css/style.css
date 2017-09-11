@@ -1414,15 +1414,15 @@ input[type="checkbox"] {
 .sort-dir {
 	position: absolute;
 	top: 10px;
-	right: -75px;
+	right: -45px;
 }
 
 .sort-dir svg {
-	padding-left: 15px;
+	padding-left: 10px;
 }
 
 .catalog {
-	width: 800px;
+	width: 770px;
 	padding-left: 0;
 }
 
