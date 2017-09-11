@@ -930,7 +930,8 @@ hr {
 
 
 .textmessage input {
-	padding: 14px 530px 87px 15px;
+	width: 600px;
+	height: 70px;
 }
 
 .modal-contacts input:hover {
