@@ -138,6 +138,7 @@ hr {
 }
 
 .slides {
+	position: relative;
 	height: 425px;
 	background-color: #eeeeee;
 }
@@ -277,6 +278,49 @@ hr {
 .slide3-right {
 	margin-left: -70px;
 }
+
+.slides > * {
+	outline: 2px solid green;
+}
+
+.radio-button ul {
+	
+	display: inline-flex;
+	list-style: none;
+}
+
+.radio-button label {
+	position: relative;
+	margin-left: 22px;
+}
+
+.radio-button input[type="radio"] {
+ 	opacity: 0;
+}
+
+.radio-button label:before {
+	content: "";
+	position: absolute;
+	top: -163px;
+	left: 690px;
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	border-radius: 60px;
+}
+
+.radio-button input[type="radio"]:checked + label::before {
+	content: "";
+	position: absolute;
+	left: 700px;
+	width: 20px;
+	height: 20px;
+	opacity: 1;
+	background-image: url("../img/active-button.svg");
+	background-repeat: no-repeat;
+
+}
+
 
 .services {
 	margin-top: 80px;
@@ -929,10 +973,26 @@ hr {
 	margin-left: 30px;
 }
 
+.textmessage textarea {
+   resize: none;
+   width: 750px;
+   height: 118px;
+}
 
-.textmessage input {
-	width: 600px;
-	height: 70px;
+.textmessage textarea:hover {
+	resize: none;
+	width: 750px;
+	height: 118px;
+	border: 2px solid #b4b9bb;
+	background-color: #ffffff;
+}
+
+.textmessage textarea:focus {
+	resize: none;
+	width: 750px;
+	height: 118px;
+	border: 2px solid #000000;
+	background-color: #ffffff;
 }
 
 .modal-contacts input:hover {
@@ -1165,7 +1225,7 @@ fieldset {
 	cursor: pointer;
 }
 
-input[type="radio"] {
+.choice-grid input[type="radio"] {
   position: absolute;
   opacity: 0;
 }
@@ -1279,7 +1339,7 @@ input[type="radio"] {
 	opacity: 0.3;
 }
 
-input[type="checkbox"] {
+.feature input[type="checkbox"] {
 	position: absolute;
 	opacity: 0;
 }
@@ -1523,8 +1583,11 @@ li:hover svg{
 
 .hover .price {
 	display: inline-block;
+	align-atems: center;
+	width: 200px;
 	margin-top: 30px;
-	padding: 15px 70px;
+	height: 50px;
+	text-align: center;
 	color: #ffffff;
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
