@@ -922,6 +922,7 @@ hr {
 .modal-contacts input {
 	padding: 18px 135px 16px 16px;
 	width: 209px;
+	outline: 0;
 }
 
 .write-us-form p:nth-child(2) {
@@ -1384,7 +1385,6 @@ input[type="checkbox"] {
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	list-style: none;
-	opacity: 0.3;
 	padding-right: 20px;
 	color: #000000;
 	font-size: 14px;
@@ -1393,8 +1393,16 @@ input[type="checkbox"] {
 	text-transform: uppercase;
 }
 
-.sort-word li:hover,
-.sort-word li:focus {
+.sort-word a {
+	opacity: 0.3;
+	color: #000000;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.sort-word a:hover,
+.sort-word a:focus {
 	opacity: 0.6;
 	color: #000000;
 	font-size: 14px;
@@ -1403,7 +1411,8 @@ input[type="checkbox"] {
 	text-transform: uppercase;
 }
 
-.sort-word li:active {
+.sort-word a:active {
+	opacity: 1;
 	color: #000000;
 	font-size: 14px;
 	line-height: 18px;
@@ -1413,12 +1422,29 @@ input[type="checkbox"] {
 
 .sort-dir {
 	position: absolute;
-	top: 10px;
-	right: -45px;
+	top: -5px;
+	right: -65px;
+} 
+
+.sort-dir li {
+	display: inline-flex;
+	flex-direction: column;
+	text-decoration: none;
+	padding-left: 0px;
+	opacity: 0.3;
 }
 
-.sort-dir svg {
-	padding-left: 10px;
+.sort-dir li:hover,
+.sort-dir li:focus {
+	opacity: 0.6;
+}
+
+.sort-dir li:active {
+	opacity: 1;
+}
+
+.sort-dir li:nth-child(2) {
+	margin-left: 15px;
 }
 
 .catalog {
@@ -1481,7 +1507,6 @@ input[type="checkbox"] {
 	display: none;
 	background-color: #eee;
 	text-align: center;
-	vertical-align: middle;
 }
 
 .hover span {
@@ -1497,9 +1522,8 @@ li:hover svg{
 }
 
 .hover .price {
-	position: absolute;
-	bottom: -10px;
-	right: 70px;
+	display: inline-block;
+	margin-top: 30px;
 	padding: 15px 70px;
 	color: #ffffff;
 	font-family: Roboto, Arial, sans-serif;
@@ -1514,9 +1538,6 @@ li:hover svg{
 
 .hover .price:hover,
 .hover .price:focus {
-	position: absolute;
-	bottom: -10px;
-	right: 70px;
 	padding: 15px 70px;
 	color: #ffffff;
 	font-family: Roboto, Arial, sans-serif;
@@ -1530,9 +1551,6 @@ li:hover svg{
 }
 
 .hover .price:active {
-	position: absolute;
-	bottom: -10px;
-	right: 70px;
 	padding: 15px 70px;
 	color: #ffffff;
 	font-family: Roboto, Arial, sans-serif;
