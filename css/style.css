@@ -559,7 +559,6 @@ hr {
 	margin: 0 auto;
 }
 
-
 .partners-list li {
 	position: relative;
 	display: -webkit-inline-box;
@@ -923,7 +922,6 @@ hr {
 .modal-contacts input {
 	padding: 18px 135px 16px 16px;
 	width: 209px;
-	border: 2px solid #d7dcde;
 	outline: 0;
 }
 
@@ -949,10 +947,6 @@ hr {
 .modal-contacts input:invalid {
 	border: 2px solid #e74246;
 	background-color: #ffffff;
-}
-
-.modal-contacts input[placeholder] {
-	opacity: 0.5;
 }
 
 .write-us-form button {
