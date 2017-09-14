@@ -139,6 +139,7 @@ hr {
 
 .slider {
 	position: relative;
+	height: auto;
 	background-color: #eeeeee;
 }
 
@@ -263,6 +264,11 @@ hr {
 	width: 100%;
 	outline: 1px solid red;
 
+}
+
+.labels label {
+	border-radius: 60px;
+	border: 2px solid yellow;
 }
 
 
