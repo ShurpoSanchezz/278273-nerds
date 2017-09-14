@@ -139,6 +139,7 @@ hr {
 
 .slider {
 	position: relative;
+	height: 475px;
 	background-color: #eeeeee;
 }
 
@@ -191,7 +192,7 @@ hr {
 }
 
 .slides {
-	height: 413px;
+	height: inherit;
 	margin: 0 auto;
 	
 }
