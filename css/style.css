@@ -223,6 +223,7 @@ hr {
 	margin-right: 55px;
 	background-image: url(../img/slide1.png);
 	background-repeat: no-repeat;
+	background-position: right;
 }
 
 .slide-1 a {
