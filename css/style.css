@@ -278,6 +278,13 @@ hr {
 	background-color: #fb565a;
 }
 
+.labels {
+	position: absolute;
+	text-align: center;
+	outline: 1px solid red;
+
+}
+
 
 .services {
 	margin-top: 80px;
