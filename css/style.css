@@ -139,7 +139,7 @@ hr {
 
 .radio-button {
 	margin: 0 auto;
-	position: relative;
+	
 }
 
 .radio-button ul {
@@ -148,13 +148,10 @@ hr {
 }
 
 .radio-button input[type="radio"] {
-	position: absolute;
-	top: 100px;
-	right: 100px;
  	opacity: 1;
 }
 
-.radio-button label:before {
+.radio-button input[type="radio"] + label:before {
 	content: "";
 	position: absolute;
 	width: 30px;
