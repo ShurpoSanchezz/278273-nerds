@@ -694,6 +694,13 @@ hr {
 	margin-top: 60px;
 }
 
+.contacts iframe {
+	margin: 0 auto;
+	width: 100%;
+	height: 416px;
+	border: 0;
+}
+
 .contacts-wrapper {
 	position: absolute;
 	top: 30px;
