@@ -137,32 +137,8 @@ hr {
 
 }
 
-.radio-button {
-	margin: 0 auto;
-	
-}
-
-.radio-button ul {
-	display: inline-flex;
-	list-style: none;
-}
-
-.radio-button input[type="radio"] {
- 	opacity: 1;
-}
-
-.radio-button input[type="radio"] + label:before {
-	content: "";
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	border-radius: 60px;
-	border: 2px solid red;
-}
-
 .slider {
 	position: relative;
-	height: 425px;
 	background-color: #eeeeee;
 }
 
@@ -280,8 +256,10 @@ hr {
 }
 
 .labels {
+	bottom: 85px;
 	position: absolute;
 	text-align: center;
+	width: 100%;
 	outline: 1px solid red;
 
 }
