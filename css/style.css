@@ -137,6 +137,32 @@ hr {
 
 }
 
+.radio-button {
+	margin: 0 auto;
+	position: relative;
+}
+
+.radio-button ul {
+	display: inline-flex;
+	list-style: none;
+}
+
+.radio-button input[type="radio"] {
+	position: absolute;
+	top: 100px;
+	right: 100px;
+ 	opacity: 1;
+}
+
+.radio-button label:before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 60px;
+	border: 2px solid red;
+}
+
 .slides {
 	position: relative;
 	height: 425px;
@@ -208,6 +234,7 @@ hr {
 .slide1-left a {
 	padding: 16px 64px;
 	background-color: #fb565a;
+	border-radius: 3px;
 }
 
 .slide1-left p {
@@ -279,54 +306,6 @@ hr {
 	margin-left: -70px;
 }
 
-.radio-button ul {
-	display: inline-flex;
-	list-style: none;
-}
-
-.radio-button label {
-	position: relative;
-	margin-left: 22px;
-}
-
-.radio-button input[type="radio"] {
-	position: absolute;
-	top: -163px;
-	left: 670px;
- 	opacity: 0;
-}
-
-.radio-button label:before {
-	content: "";
-	position: absolute;
-	top: -163px;
-	left: 695px;
-	width: 18px;
-	height: 18px;
-	background-color: #fff;
-	border-radius: 60px;
-	align-items: center;
-}
-
-.radio-button li:nth-child(1):before {
-	content: "";
-	position: absolute;
-	top: 314px;
-	left: 761px;
-	border-radius: 60px;
-	width: 5px;
-	height: 5px;
-	border: 2px solid #c1c1c1;
-	z-index: 1000;
-}
-
-.radio-button li:nth-child(2) {
-	margin-left: 11px;
-}
-
-.radio-button li:nth-child(3) {
-	margin-left: 13px;
-}
 
 
 .services {
@@ -388,29 +367,30 @@ hr {
 
 .web-sites .button {
 	width: 160px;
-	padding: 10px 0;
+	padding: 13px 0;
+	margin-top: -3px;
 	background-color: #fb565a;
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 0;
 	text-align: center;
+	border-radius: 3px;
 }
 
 .web-sites .button:hover,
 .web-sites .button:focus {
-
 	background-color: #e74246;
 	color: #fff;
 	text-transform: uppercase;
 }
 
 .web-sites .button:active {
-
+	width: 160px;
+	padding: 13px 0;
 	-webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: #d7373b;
-	line-height: 18px;
 	font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -418,19 +398,20 @@ hr {
 
 .apps .button {
 	width: 160px;
-	padding: 10px 0;
+	padding: 13px 0;
+	margin-top: -3px;
 	background-color: #00ca74;
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 0;
 	text-align: center;
+	border-radius: 3px;
 }
 
 .apps .button:hover,
 .apps .button:focus {
 	width: 160px;
-	padding: 10px 0;
 	background-color: #00bc6c;
 	color: #fff;
 	text-transform: uppercase;
@@ -438,11 +419,12 @@ hr {
 }
 
 .apps .button:active {
-	width: 160px;
 	-webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: #00aa62;
-	line-height: 18px;
+	width: 160px;
+	padding: 13px 0;
+	margin-top: -3px;
 	font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -454,13 +436,15 @@ hr {
 
 .presentation .button {
 	width: 160px;
-	padding: 10px 0;
+	padding: 13px 0;
+	margin-top: -3px;
 	background-color: #efc84a;
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 0;
 	text-align: center;
+	border-radius: 3px;
 }
 
 .presentation .button:hover,
@@ -473,11 +457,11 @@ hr {
 
 .presentation .button:active {
 	width: 160px;
-	height: 50px;
+	padding: 13px 0;
+	margin-top: -3px;
 	-webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: #e5a722;
-	line-height: 18px;
 	font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -496,7 +480,7 @@ hr {
 }
 
 .about-left {
-	margin-top: 50px;
+	margin-top: 45px;
 	width: 650px;
 }
 
@@ -550,7 +534,7 @@ hr {
 
 
 .about-right {
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-left: 90px;
 }
 
@@ -577,7 +561,8 @@ hr {
 
 .advantage {
 	width: 20px;
-	margin-left: 56px;
+	margin-top: 10px;
+	margin-left: 58px;
 }
 
 
@@ -608,9 +593,11 @@ hr {
 
 .partners-list {
 	margin: 0 auto;
+	margin-top: -15px
 }
 
 .partners-list li {
+	;
 	position: relative;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -767,6 +754,7 @@ hr {
 	font-weight: 500;
 	text-transform: uppercase;
 	cursor: pointer;
+	border-radius: 3px;
 }
 
 .write-to-us a:hover,
@@ -990,6 +978,7 @@ hr {
 	width: 209px;
 	border: 2px solid #d8dddf;
 	outline: 0;
+	border-radius: 3px;
 }
 
 .modal-contacts input:hover {
@@ -1008,11 +997,12 @@ hr {
 
 
 .modal-contacts textarea {
-   resize: none;
-   width: 750px;
-   height: 118px;
-	 outline: inherit;
-	 border: 2px solid #d8dddf;
+	resize: none;
+	width: 750px;
+	height: 118px;
+	outline: inherit;
+	border: 2px solid #d8dddf;
+	border-radius: 3px;
 }
 
 .modal-contacts textarea:hover {
@@ -1095,6 +1085,8 @@ hr {
 	line-height: 18px;
 	font-weight: 500;
 	border: 0;
+	border-radius: 3px;
+	text-transform: uppercase;
 }
 
 .close-cross {
@@ -1464,6 +1456,7 @@ fieldset {
 	margin-top: -20px;
 	text-transform: uppercase;
 	border: 0;
+	border-radius: 3px;
 	color: #000000;
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
