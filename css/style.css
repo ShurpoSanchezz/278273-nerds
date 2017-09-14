@@ -138,6 +138,7 @@ hr {
 }
 
 .slides {
+	position: relative;
 	height: 425px;
 	background-color: #eeeeee;
 }
@@ -278,6 +279,56 @@ hr {
 	margin-left: -70px;
 }
 
+.radio-button ul {
+	display: inline-flex;
+	list-style: none;
+}
+
+.radio-button label {
+	position: relative;
+	margin-left: 22px;
+}
+
+.radio-button input[type="radio"] {
+	position: absolute;
+	top: -163px;
+	left: 670px;
+ 	opacity: 0;
+}
+
+.radio-button label:before {
+	content: "";
+	position: absolute;
+	top: -163px;
+	left: 695px;
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	border-radius: 60px;
+	align-items: center;
+}
+
+.radio-button li:nth-child(1):before {
+	content: "";
+	position: absolute;
+	top: 314px;
+	left: 761px;
+	border-radius: 60px;
+	width: 5px;
+	height: 5px;
+	border: 2px solid #c1c1c1;
+	z-index: 1000;
+}
+
+.radio-button li:nth-child(2) {
+	margin-left: 11px;
+}
+
+.radio-button li:nth-child(3) {
+	margin-left: 13px;
+}
+
+
 .services {
 	margin-top: 80px;
 	margin-bottom: 100px;
@@ -348,14 +399,14 @@ hr {
 
 .web-sites .button:hover,
 .web-sites .button:focus {
-	
+
 	background-color: #e74246;
 	color: #fff;
 	text-transform: uppercase;
 }
 
 .web-sites .button:active {
-	
+
 	-webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: #d7373b;
@@ -769,7 +820,7 @@ hr {
 }
 
 
-.main-footer .social li {
+.social li {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
@@ -790,8 +841,8 @@ hr {
 	border-radius: 55px;
 }
 
-.main-footer .social li:hover,
-.main-footer .social li:focus {
+.social li:hover,
+.social li:focus {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -803,7 +854,7 @@ hr {
 	border-radius: 55px;
 }
 
-.main-footer .social li:active {
+.social li:active {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -815,6 +866,10 @@ hr {
 	        box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: #d7373b;
 	border-radius: 55px;
+}
+
+.social li:active svg {
+	opacity: 0.5;
 }
 
 .main-footer b {
@@ -906,7 +961,7 @@ hr {
 	margin-left: 100px;
 	padding-top: 30px;
 	margin-bottom: 50px;
-	 
+
 	color: #000000;
 	font-size: 45px;
 	font-weight: 500;
@@ -919,20 +974,15 @@ hr {
 	font-weight: 700;
 }
 
-.modal-contacts input {
-	padding: 18px 135px 16px 16px;
-	width: 209px;
-	outline: 0;
-}
-
 .write-us-form p:nth-child(2) {
 	margin-left: 30px;
 }
 
-
-.textmessage input {
-	width: 600px;
-	height: 70px;
+.modal-contacts input {
+	padding: 18px 135px 16px 16px;
+	width: 209px;
+	border: 2px solid #d8dddf;
+	outline: 0;
 }
 
 .modal-contacts input:hover {
@@ -948,6 +998,85 @@ hr {
 	border: 2px solid #e74246;
 	background-color: #ffffff;
 }
+
+
+.modal-contacts textarea {
+   resize: none;
+   width: 750px;
+   height: 118px;
+	 outline: inherit;
+	 border: 2px solid #d8dddf;
+}
+
+.modal-contacts textarea:hover {
+	resize: none;
+	width: 750px;
+	height: 118px;
+	border: 2px solid #b4b9bb;
+	background-color: #ffffff;
+}
+
+.modal-contacts textarea:focus {
+	resize: none;
+	width: 750px;
+	height: 118px;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+}
+
+.modal-contacts input::-webkit-input-placeholder {
+	color:  rgba(68, 68, 68, 0.5);
+}
+.modal-contacts input::-moz-placeholder {
+	color:  rgba(68, 68, 68, 0.5);
+}/* Firefox 19+ */
+.modal-contacts input:-moz-placeholder {
+	color:  rgba(68, 68, 68, 0.5);
+}/* Firefox 18- */
+.modal-contacts input:-ms-input-placeholder {
+	color:  rgba(68, 68, 68, 0.5);
+}
+
+.modal-contacts input:hover::-webkit-input-placeholder {
+	color:  rgba(68, 68, 68, 0.5);
+}
+.modal-contacts input:hover::-moz-placeholder {
+	color:  rgba(68, 68, 68, 0.5);
+}/* Firefox 19+ */
+.modal-contacts input:hover:-moz-placeholder {
+	color:  rgba(68, 68, 68, 0.5);
+}/* Firefox 18- */
+.modal-contacts input:hover:-ms-input-placeholder {
+	color:  rgba(68, 68, 68, 0.5);
+}
+
+.modal-contacts input:focus::-webkit-input-placeholder {
+	color:  rgb(67, 67, 67);
+}
+.modal-contacts input:focus:hover::-moz-placeholder {
+	color:  rgb(67, 67, 67);
+}/* Firefox 19+ */
+.modal-contacts input:focus:-moz-placeholder {
+	color:  rgb(67, 67, 67);
+}/* Firefox 18- */
+.modal-contacts input:focus:-ms-input-placeholder {
+	color:  rgb(67, 67, 67);
+}
+
+.modal-contacts input:invalid::-webkit-input-placeholder {
+	color:  #e74246;
+}
+.modal-contacts input:invalid::-moz-placeholder {
+	color:  #e74246;
+}/* Firefox 19+ */
+.modal-contacts input:invalid:-moz-placeholder {
+	color:  #e74246;
+}/* Firefox 18- */
+.modal-contacts input:invalid:-ms-input-placeholder {
+	color:  #e74246;
+}
+
+
 
 .write-us-form button {
 	width: 260px;
@@ -1034,8 +1163,8 @@ hr {
 
 .filters-catalog {
 	margin-right: 140px;
-	
-	
+
+
 }
 
 fieldset {
@@ -1165,7 +1294,7 @@ fieldset {
 	cursor: pointer;
 }
 
-input[type="radio"] {
+.choice-grid input[type="radio"] {
   position: absolute;
   opacity: 0;
 }
@@ -1279,7 +1408,7 @@ input[type="radio"] {
 	opacity: 0.3;
 }
 
-input[type="checkbox"] {
+.feature input[type="checkbox"] {
 	position: absolute;
 	opacity: 0;
 }
@@ -1317,6 +1446,7 @@ input[type="checkbox"] {
 }
 
 .filters button {
+	border-radius: 3px;
 	cursor: pointer;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
@@ -1332,6 +1462,7 @@ input[type="checkbox"] {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
+
 }
 
 .filters button:hover,
@@ -1424,7 +1555,7 @@ input[type="checkbox"] {
 	position: absolute;
 	top: -5px;
 	right: -65px;
-} 
+}
 
 .sort-dir li {
 	display: inline-flex;
@@ -1476,17 +1607,17 @@ input[type="checkbox"] {
 }
 
 .catalog li:nth-child(2n) {
-	padding-left: 40px;
+	padding-left: 30px;
 }
 
-.catalog b {
-	margin-bottom: 50px;
+.catalog a {
+
 	color: #000000;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding-bottom: 50px;
+
 }
 
 .catalog span {
@@ -1524,11 +1655,12 @@ li:hover svg{
 .hover .price {
 	display: inline-block;
 	margin-top: 30px;
-	padding: 15px 70px;
+	height: 50px;
+	width: 200px;
 	color: #ffffff;
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 50px;
 	font-weight: 500;
 	text-transform: uppercase;
 	background-color: #fb565a;
@@ -1538,24 +1670,31 @@ li:hover svg{
 
 .hover .price:hover,
 .hover .price:focus {
-	padding: 15px 70px;
+	display: inline-block;
+	margin-top: 30px;
+	height: 50px;
+	width: 200px;
 	color: #ffffff;
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 50px;
 	font-weight: 500;
 	text-transform: uppercase;
-	background-color: #e74246;
+	background-color: #fb565a;
 	border: 0;
 	cursor: pointer;
+	background-color: #e74246;
 }
 
 .hover .price:active {
-	padding: 15px 70px;
+	display: inline-block;
+	margin-top: 30px;
+	height: 50px;
+	width: 200px;
 	color: #ffffff;
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 50px;
 	font-weight: 500;
 	text-transform: uppercase;
 	-webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
