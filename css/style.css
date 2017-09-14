@@ -210,6 +210,10 @@ hr {
 	background-color: #d7373b;
 }
 
+.slider input {
+	opacity: 0;
+}
+
 .slides {
 	margin: 0 auto;
 	
