@@ -6,7 +6,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css" type="text/css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
-		<!-- <link rel="stylesheet" href="css/minify.css" type="text/css"> -->
+		<link rel="stylesheet" href="css/minify.css" type="text/css">
 	</head>
 	<body>
 		<header class="main-header wrapper">
@@ -63,7 +63,7 @@
 							<ul>
 								<li>
 									<input id="adaptive" type="radio" name="choice-grid" value="adaptive" checked>
-									<label for="adaptive">Адаптивная</label>	
+									<label for="adaptive">Адаптивная</label>
 								</li>
 								<li>
 									<input id="fixed" type="radio" name="choice-grid" value="fixed">
@@ -137,9 +137,9 @@
 						</div>
 						<a href="#"><img src="img/img-sedona.jpg" alt="Шаблон сайта 'Sedona'" width="360" height="576"></a>
 						<div class="hover">
-							<b>Sedona</b><br>
+							<a href="#">Sedona</a><br>
 							<span>Информационный сайт<br> для туристов</span><br>
-							<a class="price" href="#">9 900 000 руб.</a>
+							<a class="price" href="#">9 900 руб.</a>
 						</div>
 					</li>
 					<li class="pink">
@@ -150,7 +150,7 @@
 						</div>
 						<a href="#"><img src="img/img-pink.jpg" alt="Шаблон сайта 'Pink'" width="360" height="576"></a>
 						<div class="hover">
-							<b>Pink App</b><br>
+							<a href="#">pink app</a><br>
 							<span>Продуктовый лендинг<br> приложения для iOS и Android</span><br>
 							<a class="price" href="#">9 900 руб.</a>
 						</div>
@@ -163,7 +163,7 @@
 					</div>
 						<a href="#"><img src="img/img-barbershop.jpg" alt="Шаблон сайта 'Барбершоп'" width="360" height="576"></a>
 						<div class="hover">
-							<b>Barbershop</b><br>
+							<a href="#">barbershop</a><br>
 							<span>Сайт салоны красоты<br> Для мужчин, да.</span><br>
 							<a class="price" href="#">9 900 руб.</a>
 						</div>
@@ -176,7 +176,7 @@
 					</div>
 						<a href="#"><img src="img/img-mishka.jpg" alt="Шаблон сайта 'Мишка'" width="360" height="576"></a>
 						<div class="hover">
-							<b>Mishka</b><br>
+							<a href="#">mishka</a><br>
 							<span>Интернет-магазин<br> вязаных игрушек</span><br>
 							<a class="price" href="#">9 900 руб.</a>
 						</div>
@@ -189,7 +189,7 @@
 					</div>
 						<a href="#"><img src="img/img-aplus.jpg" alt="Шаблон сайта 'A Plus'" width="360" height="576"></a>
 						<div class="hover">
-							<b>A Plus</b><br>
+							<a href="#">a plus</a><br>
 							<span>Лендинг курсов повышения<br> квалификации</span><br>
 							<a class="price" href="#">9 900 руб.</a>
 						</div>
@@ -202,7 +202,7 @@
 					</div>
 						<a href="#"><img src="img/img-kvast.jpg" alt="Шаблон сайта 'Кваст'" width="360" height="576"></a>
 						<div class="hover">
-							<b>Кваст</b><br>
+							<a href="#">Кваст</a><br>
 							<span>Промо-сайт производителя<br> крафтового кваса</span><br>
 							<a class="price" href="#">9 900 руб.</a>
 						</div>
@@ -215,11 +215,11 @@
 		          <a class="next" href="#">Следующая</a>
 		        </div>
 			</section>
-			
+
 	</main>
 	<section class="contacts wrapper">
 			<h2 class="visually-hidden">Наши контакты</h2>
-      			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58940811282a1246139c77e965ef2d3c3b6cf36724ea7f2b16ccdc4d66098112&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script>
+      			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A58940811282a1246139c77e965ef2d3c3b6cf36724ea7f2b16ccdc4d66098112&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" height="416"></iframe>
 				<div class="contacts-wrapper inner">
 					<div class="write-to-us">
 						<b>NЁRDS DESIGN STUDIO</b>
@@ -233,7 +233,7 @@
 		<div class="footer-social">
 			<ul class="social">
 				<li><a href="https://vk.com">
-					<svg 
+					<svg
 						 xmlns="http://www.w3.org/2000/svg"
 						 xmlns:xlink="http://www.w3.org/1999/xlink"
 						 width="26px" height="15px">
@@ -260,11 +260,11 @@
 		<section class="modal-contacts">
 		<h2>Напишите нам</h2>
 			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-				<p>		
+				<p>
 					<label for="name">Ваше имя:</label>
 					<input id="name" type="text" placeholder="Представьте, пожалуйста">
 				</p>
-				<p class="email">	
+				<p class="email">
 					<label for="email">Ваш e-mail:</label>
 					<input id="email" type="email" placeholder="Для отправки ответа">
 				</p>
@@ -276,7 +276,7 @@
 			</form>
 			<button class="close-cross" type="button">Закрыть</button>
 		</section>
-
+		<script src="js/minify-modal-write.js"></script>
 		<script src="js/modal-write.js"></script>
 	</body>
 </html>
