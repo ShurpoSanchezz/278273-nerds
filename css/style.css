@@ -237,25 +237,14 @@ hr {
 	line-height: 24px;
 }
 
-.slide-2 {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	display: none;
-	margin: 0 auto;
-}
 
 .slide-2 {
-	width: 515px;
 	margin-top: 60px;
 	margin-right: -50px;
 	background-image: url(../img/slide2.png);
 	background-repeat: no-repeat;
 	background-position: right;
+	display: none;
 }
 
 .slide-2 a {
@@ -269,23 +258,11 @@ hr {
 }
 
 .slide-3 {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	display: none;
-	margin: 0 auto;
-}
-
-.slide-3 {
-	width: 460px;
 	margin-top: 60px;
 	background-image: url(../img/slide3.png);
 	background-repeat: no-repeat;
 	background-position: right;
+	display: none;
 }
 
 .slide-3 p {
