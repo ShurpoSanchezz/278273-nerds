@@ -208,12 +208,17 @@ hr {
 
 
 .slide-1 a {
-	padding: 16px 53px;
+	display: inline-block;
+	line-height: 50px;
+	height: 50px;
+	width: 240px;
+	text-align: center;
 	background-color: #fb565a;
 	border-radius: 3px;
 }
 
 .slide-1 p {
+	margin-bottom: 0;
 	width: 380px;
 	font-size: 16px;
 	font-weight: 400;
@@ -233,8 +238,13 @@ hr {
 
 
 .slide-2 a {
-	padding: 16px 53px;
+	display: inline-block;
+	line-height: 50px;
+	height: 50px;
+	width: 240px;
+	text-align: center;
 	background-color: #fb565a;
+	border-radius: 3px;
 }
 
 .slide-2 p {
@@ -251,8 +261,13 @@ hr {
 }
 
 .slide-3 a {
-	padding: 16px 53px;
+	display: inline-block;
+	line-height: 50px;
+	height: 50px;
+	width: 240px;
+	text-align: center;
 	background-color: #fb565a;
+	border-radius: 3px;
 }
 
 .labels {
@@ -271,6 +286,15 @@ hr {
 	background-color: #fff;
 	border-radius: 40px;
 	border: 2px solid #fff;
+}
+
+input:cheched ~ labels label::before {
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #eeeeee;
+	border-radius: 40px;
 }
 
 
