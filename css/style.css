@@ -263,12 +263,12 @@ hr {
 	text-align: center;
 	width: 100%;
 	outline: 1px solid red;
-
 }
 
 .labels label {
-	border-radius: 60px;
+	border-radius: 40px;
 	border: 2px solid yellow;
+	margin-left: 20px;
 }
 
 
