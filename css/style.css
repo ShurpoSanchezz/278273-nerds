@@ -155,7 +155,7 @@ hr {
 
 .slider p {
 	padding-top: 10px;
-	padding-bottom: 42px;
+	padding-bottom: 45px;
 	color: #283136;
 	font-size: 16px;
 	line-height: 24px;
@@ -197,18 +197,18 @@ hr {
 }
 
 .slide-1 {
-	height: 400px;
+	height: 353px;
 	padding-top: 71px;
-	margin-right: 55px;
+	margin-right: 30px;
 	background-image: url(../img/slide1.png);
 	background-repeat: no-repeat;
-	background-position: 100% 0%;
+	background-position: 100% 100%;
 }
 
 
 
 .slide-1 a {
-	padding: 16px 64px;
+	padding: 16px 53px;
 	background-color: #fb565a;
 	border-radius: 3px;
 }
@@ -233,7 +233,7 @@ hr {
 
 
 .slide-2 a {
-	padding: 16px 64px;
+	padding: 16px 53px;
 	background-color: #fb565a;
 }
 
@@ -250,22 +250,16 @@ hr {
 	display: none;
 }
 
-.slide-3 p {
-	width: 343px;
-}
-
 .slide-3 a {
-	padding: 16px 64px;
+	padding: 16px 53px;
 	background-color: #fb565a;
 }
 
 .labels {
-	right: 27px;
 	bottom: 85px;
 	position: absolute;
 	text-align: center;
 	width: 100%;
-	outline: 1px solid red;
 }
 
 .labels label {
