@@ -198,11 +198,11 @@ hr {
 
 .slide-1 {
 	height: 400px;
-	padding-top: 50px;
+	padding-top: 71px;
 	margin-right: 55px;
 	background-image: url(../img/slide1.png);
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: 100% 0%;
 }
 
 
@@ -222,7 +222,8 @@ hr {
 
 
 .slide-2 {
-	margin-top: 60px;
+	height: 400px;
+	padding-top: 71px;
 	margin-right: -50px;
 	background-image: url(../img/slide2.png);
 	background-repeat: no-repeat;
