@@ -266,10 +266,11 @@ hr {
 	outline: 1px solid red;
 }
 
-.labels label::before {
-	position: absolute;
-	width: 20px;
-	height: 20px;
+.labels label {
+	position: relative;
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
 	border-radius: 40px;
 	border: 2px solid #fff;
 }
