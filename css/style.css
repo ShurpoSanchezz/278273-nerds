@@ -188,30 +188,24 @@ hr {
 }
 
 .slider input {
-	opacity: 0;
-	height: 0;
-  	overflow: hidden;
-  	position: absolute;
+	display: none;
 }
 
 .slides {
 	height: inherit;
 	margin: 0 auto;
-	
 }
 
 .slide-1 {
 	height: 400px;
-	padding: 0;
+	padding-top: 50px;
 	margin-right: 55px;
 	background-image: url(../img/slide1.png);
 	background-repeat: no-repeat;
 	background-position: right;
 }
 
-.slide-1 b {
-	padding-top: 30px;
-}
+
 
 .slide-1 a {
 	padding: 16px 64px;
