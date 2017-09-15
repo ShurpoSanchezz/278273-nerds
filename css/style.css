@@ -258,6 +258,7 @@ hr {
 }
 
 .labels {
+	right: 30px;
 	bottom: 85px;
 	position: absolute;
 	text-align: center;
